@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A962C2A927F5CEC500F74707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2A827F5CEC500F74707 /* AppDelegate.swift */; };
+		A962C2AB27F5CEC500F74707 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2AA27F5CEC500F74707 /* SceneDelegate.swift */; };
+		A962C2AD27F5CEC500F74707 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2AC27F5CEC500F74707 /* ViewController.swift */; };
+		A962C2B027F5CEC500F74707 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A962C2AE27F5CEC500F74707 /* Main.storyboard */; };
+		A962C2B327F5CEC500F74707 /* Dentalia.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A962C2B127F5CEC500F74707 /* Dentalia.xcdatamodeld */; };
+		A962C2B527F5CEC800F74707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A962C2B427F5CEC800F74707 /* Assets.xcassets */; };
+		A962C2B827F5CEC800F74707 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A962C2B627F5CEC800F74707 /* LaunchScreen.storyboard */; };
+		A962C2C327F5CEC800F74707 /* DentaliaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2C227F5CEC800F74707 /* DentaliaTests.swift */; };
+		A962C2CD27F5CEC800F74707 /* DentaliaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2CC27F5CEC800F74707 /* DentaliaUITests.swift */; };
+		A962C2CF27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2CE27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A962C2BF27F5CEC800F74707 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A962C29D27F5CEC500F74707 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A962C2A427F5CEC500F74707;
+			remoteInfo = Dentalia;
+		};
+		A962C2C927F5CEC800F74707 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A962C29D27F5CEC500F74707 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A962C2A427F5CEC500F74707;
+			remoteInfo = Dentalia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A962C2A527F5CEC500F74707 /* Dentalia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dentalia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A962C2A827F5CEC500F74707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A962C2AA27F5CEC500F74707 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A962C2AC27F5CEC500F74707 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A962C2AF27F5CEC500F74707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A962C2B227F5CEC500F74707 /* Dentalia.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Dentalia.xcdatamodel; sourceTree = "<group>"; };
+		A962C2B427F5CEC800F74707 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A962C2B727F5CEC800F74707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A962C2B927F5CEC800F74707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A962C2BE27F5CEC800F74707 /* DentaliaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DentaliaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A962C2C227F5CEC800F74707 /* DentaliaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentaliaTests.swift; sourceTree = "<group>"; };
+		A962C2C827F5CEC800F74707 /* DentaliaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DentaliaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A962C2CC27F5CEC800F74707 /* DentaliaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentaliaUITests.swift; sourceTree = "<group>"; };
+		A962C2CE27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentaliaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A962C2A227F5CEC500F74707 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A962C2BB27F5CEC800F74707 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A962C2C527F5CEC800F74707 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A962C29C27F5CEC500F74707 = {
+			isa = PBXGroup;
+			children = (
+				A962C2A727F5CEC500F74707 /* Dentalia */,
+				A962C2C127F5CEC800F74707 /* DentaliaTests */,
+				A962C2CB27F5CEC800F74707 /* DentaliaUITests */,
+				A962C2A627F5CEC500F74707 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A962C2A627F5CEC500F74707 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A962C2A527F5CEC500F74707 /* Dentalia.app */,
+				A962C2BE27F5CEC800F74707 /* DentaliaTests.xctest */,
+				A962C2C827F5CEC800F74707 /* DentaliaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A962C2A727F5CEC500F74707 /* Dentalia */ = {
+			isa = PBXGroup;
+			children = (
+				A962C2A827F5CEC500F74707 /* AppDelegate.swift */,
+				A962C2AA27F5CEC500F74707 /* SceneDelegate.swift */,
+				A962C2AC27F5CEC500F74707 /* ViewController.swift */,
+				A962C2AE27F5CEC500F74707 /* Main.storyboard */,
+				A962C2B427F5CEC800F74707 /* Assets.xcassets */,
+				A962C2B627F5CEC800F74707 /* LaunchScreen.storyboard */,
+				A962C2B927F5CEC800F74707 /* Info.plist */,
+				A962C2B127F5CEC500F74707 /* Dentalia.xcdatamodeld */,
+			);
+			path = Dentalia;
+			sourceTree = "<group>";
+		};
+		A962C2C127F5CEC800F74707 /* DentaliaTests */ = {
+			isa = PBXGroup;
+			children = (
+				A962C2C227F5CEC800F74707 /* DentaliaTests.swift */,
+			);
+			path = DentaliaTests;
+			sourceTree = "<group>";
+		};
+		A962C2CB27F5CEC800F74707 /* DentaliaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A962C2CC27F5CEC800F74707 /* DentaliaUITests.swift */,
+				A962C2CE27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift */,
+			);
+			path = DentaliaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A962C2A427F5CEC500F74707 /* Dentalia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A962C2D227F5CEC800F74707 /* Build configuration list for PBXNativeTarget "Dentalia" */;
+			buildPhases = (
+				A962C2A127F5CEC500F74707 /* Sources */,
+				A962C2A227F5CEC500F74707 /* Frameworks */,
+				A962C2A327F5CEC500F74707 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dentalia;
+			productName = Dentalia;
+			productReference = A962C2A527F5CEC500F74707 /* Dentalia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A962C2BD27F5CEC800F74707 /* DentaliaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A962C2D527F5CEC800F74707 /* Build configuration list for PBXNativeTarget "DentaliaTests" */;
+			buildPhases = (
+				A962C2BA27F5CEC800F74707 /* Sources */,
+				A962C2BB27F5CEC800F74707 /* Frameworks */,
+				A962C2BC27F5CEC800F74707 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A962C2C027F5CEC800F74707 /* PBXTargetDependency */,
+			);
+			name = DentaliaTests;
+			productName = DentaliaTests;
+			productReference = A962C2BE27F5CEC800F74707 /* DentaliaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A962C2C727F5CEC800F74707 /* DentaliaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A962C2D827F5CEC800F74707 /* Build configuration list for PBXNativeTarget "DentaliaUITests" */;
+			buildPhases = (
+				A962C2C427F5CEC800F74707 /* Sources */,
+				A962C2C527F5CEC800F74707 /* Frameworks */,
+				A962C2C627F5CEC800F74707 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A962C2CA27F5CEC800F74707 /* PBXTargetDependency */,
+			);
+			name = DentaliaUITests;
+			productName = DentaliaUITests;
+			productReference = A962C2C827F5CEC800F74707 /* DentaliaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A962C29D27F5CEC500F74707 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A962C2A427F5CEC500F74707 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A962C2BD27F5CEC800F74707 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A962C2A427F5CEC500F74707;
+					};
+					A962C2C727F5CEC800F74707 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A962C2A427F5CEC500F74707;
+					};
+				};
+			};
+			buildConfigurationList = A962C2A027F5CEC500F74707 /* Build configuration list for PBXProject "Dentalia" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A962C29C27F5CEC500F74707;
+			productRefGroup = A962C2A627F5CEC500F74707 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A962C2A427F5CEC500F74707 /* Dentalia */,
+				A962C2BD27F5CEC800F74707 /* DentaliaTests */,
+				A962C2C727F5CEC800F74707 /* DentaliaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A962C2A327F5CEC500F74707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A962C2B827F5CEC800F74707 /* LaunchScreen.storyboard in Resources */,
+				A962C2B527F5CEC800F74707 /* Assets.xcassets in Resources */,
+				A962C2B027F5CEC500F74707 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A962C2BC27F5CEC800F74707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A962C2C627F5CEC800F74707 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A962C2A127F5CEC500F74707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A962C2AD27F5CEC500F74707 /* ViewController.swift in Sources */,
+				A962C2A927F5CEC500F74707 /* AppDelegate.swift in Sources */,
+				A962C2AB27F5CEC500F74707 /* SceneDelegate.swift in Sources */,
+				A962C2B327F5CEC500F74707 /* Dentalia.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A962C2BA27F5CEC800F74707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A962C2C327F5CEC800F74707 /* DentaliaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A962C2C427F5CEC800F74707 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A962C2CF27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift in Sources */,
+				A962C2CD27F5CEC800F74707 /* DentaliaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A962C2C027F5CEC800F74707 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A962C2A427F5CEC500F74707 /* Dentalia */;
+			targetProxy = A962C2BF27F5CEC800F74707 /* PBXContainerItemProxy */;
+		};
+		A962C2CA27F5CEC800F74707 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A962C2A427F5CEC500F74707 /* Dentalia */;
+			targetProxy = A962C2C927F5CEC800F74707 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A962C2AE27F5CEC500F74707 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A962C2AF27F5CEC500F74707 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A962C2B627F5CEC800F74707 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A962C2B727F5CEC800F74707 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A962C2D027F5CEC800F74707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A962C2D127F5CEC800F74707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A962C2D327F5CEC800F74707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dentalia/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = madacode.Dentalia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A962C2D427F5CEC800F74707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Dentalia/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = madacode.Dentalia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A962C2D627F5CEC800F74707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = madacode.DentaliaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dentalia.app/Dentalia";
+			};
+			name = Debug;
+		};
+		A962C2D727F5CEC800F74707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = madacode.DentaliaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dentalia.app/Dentalia";
+			};
+			name = Release;
+		};
+		A962C2D927F5CEC800F74707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = madacode.DentaliaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dentalia;
+			};
+			name = Debug;
+		};
+		A962C2DA27F5CEC800F74707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = madacode.DentaliaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dentalia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A962C2A027F5CEC500F74707 /* Build configuration list for PBXProject "Dentalia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A962C2D027F5CEC800F74707 /* Debug */,
+				A962C2D127F5CEC800F74707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A962C2D227F5CEC800F74707 /* Build configuration list for PBXNativeTarget "Dentalia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A962C2D327F5CEC800F74707 /* Debug */,
+				A962C2D427F5CEC800F74707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A962C2D527F5CEC800F74707 /* Build configuration list for PBXNativeTarget "DentaliaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A962C2D627F5CEC800F74707 /* Debug */,
+				A962C2D727F5CEC800F74707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A962C2D827F5CEC800F74707 /* Build configuration list for PBXNativeTarget "DentaliaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A962C2D927F5CEC800F74707 /* Debug */,
+				A962C2DA27F5CEC800F74707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A962C2B127F5CEC500F74707 /* Dentalia.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A962C2B227F5CEC500F74707 /* Dentalia.xcdatamodel */,
+			);
+			currentVersion = A962C2B227F5CEC500F74707 /* Dentalia.xcdatamodel */;
+			path = Dentalia.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A962C29D27F5CEC500F74707 /* Project object */;
+}
