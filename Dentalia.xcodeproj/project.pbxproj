@@ -17,6 +17,8 @@
 		A962C2C327F5CEC800F74707 /* DentaliaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2C227F5CEC800F74707 /* DentaliaTests.swift */; };
 		A962C2CD27F5CEC800F74707 /* DentaliaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2CC27F5CEC800F74707 /* DentaliaUITests.swift */; };
 		A962C2CF27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2CE27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift */; };
+		A984F5FE27FE0E11001EE510 /* ViewControllerPacientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984F5FD27FE0E11001EE510 /* ViewControllerPacientes.swift */; };
+		A984F60027FEFDC9001EE510 /* Agenda.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A984F5FF27FEFDC8001EE510 /* Agenda.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		A962C2C827F5CEC800F74707 /* DentaliaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DentaliaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A962C2CC27F5CEC800F74707 /* DentaliaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentaliaUITests.swift; sourceTree = "<group>"; };
 		A962C2CE27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentaliaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A984F5FD27FE0E11001EE510 /* ViewControllerPacientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPacientes.swift; sourceTree = "<group>"; };
+		A984F5FF27FEFDC8001EE510 /* Agenda.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Agenda.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				A962C2AA27F5CEC500F74707 /* SceneDelegate.swift */,
 				A962C2AC27F5CEC500F74707 /* ViewController.swift */,
 				A962C2AE27F5CEC500F74707 /* Main.storyboard */,
+				A984F5FF27FEFDC8001EE510 /* Agenda.storyboard */,
+				A984F5FD27FE0E11001EE510 /* ViewControllerPacientes.swift */,
 				A962C2B427F5CEC800F74707 /* Assets.xcassets */,
 				A962C2B627F5CEC800F74707 /* LaunchScreen.storyboard */,
 				A962C2B927F5CEC800F74707 /* Info.plist */,
@@ -234,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A984F60027FEFDC9001EE510 /* Agenda.storyboard in Resources */,
 				A962C2B827F5CEC800F74707 /* LaunchScreen.storyboard in Resources */,
 				A962C2B527F5CEC800F74707 /* Assets.xcassets in Resources */,
 				A962C2B027F5CEC500F74707 /* Main.storyboard in Resources */,
@@ -263,6 +270,7 @@
 			files = (
 				A962C2AD27F5CEC500F74707 /* ViewController.swift in Sources */,
 				A962C2A927F5CEC500F74707 /* AppDelegate.swift in Sources */,
+				A984F5FE27FE0E11001EE510 /* ViewControllerPacientes.swift in Sources */,
 				A962C2AB27F5CEC500F74707 /* SceneDelegate.swift in Sources */,
 				A962C2B327F5CEC500F74707 /* Dentalia.xcdatamodeld in Sources */,
 			);
