@@ -29,12 +29,15 @@ class ViewControllerCalendario: UIViewController, UICollectionViewDelegate, UICo
         flowLayout.itemSize = CGSize(width: ancho, height: altura)
         
     }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "calCell", for: indexPath) as! CalendarioCell
+        cell.lbDiaMes.text = cuadradosTotales[indexPath.item]
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        cuadradosTotales.count
     }
     
     @IBAction func mesAnterior(_ sender: Any) {
