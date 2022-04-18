@@ -42,7 +42,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row{
-            case 0: let VCCalendario = storyboard?.instantiateViewController (identifier: "Calendario") as? ViewControllerPacientes
+            case 0: let VCCalendario = storyboard?.instantiateViewController (identifier: "Calendario") as? ViewControllerCalendario
                 navigationController?.pushViewController(VCCalendario!, animated: true)
                 break
             case 1:let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
