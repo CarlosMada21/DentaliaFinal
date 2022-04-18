@@ -19,6 +19,8 @@
 		A962C2CF27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2CE27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift */; };
 		A984F5FE27FE0E11001EE510 /* ViewControllerPacientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984F5FD27FE0E11001EE510 /* ViewControllerPacientes.swift */; };
 		A984F60027FEFDC9001EE510 /* Agenda.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A984F5FF27FEFDC8001EE510 /* Agenda.storyboard */; };
+		A99FA678280D356A00583635 /* CalendarioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA677280D356A00583635 /* CalendarioCell.swift */; };
+		A99FA67A280D379100583635 /* ViewControllerCalendario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA679280D379100583635 /* ViewControllerCalendario.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		A962C2CE27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentaliaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A984F5FD27FE0E11001EE510 /* ViewControllerPacientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPacientes.swift; sourceTree = "<group>"; };
 		A984F5FF27FEFDC8001EE510 /* Agenda.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Agenda.storyboard; sourceTree = "<group>"; };
+		A99FA677280D356A00583635 /* CalendarioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioCell.swift; sourceTree = "<group>"; };
+		A99FA679280D379100583635 /* ViewControllerCalendario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCalendario.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				A962C2AA27F5CEC500F74707 /* SceneDelegate.swift */,
 				A962C2AC27F5CEC500F74707 /* ViewController.swift */,
 				A962C2AE27F5CEC500F74707 /* Main.storyboard */,
+				A99FA679280D379100583635 /* ViewControllerCalendario.swift */,
+				A99FA677280D356A00583635 /* CalendarioCell.swift */,
 				A984F5FF27FEFDC8001EE510 /* Agenda.storyboard */,
 				A984F5FD27FE0E11001EE510 /* ViewControllerPacientes.swift */,
 				A962C2B427F5CEC800F74707 /* Assets.xcassets */,
@@ -268,11 +274,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A99FA67A280D379100583635 /* ViewControllerCalendario.swift in Sources */,
 				A962C2AD27F5CEC500F74707 /* ViewController.swift in Sources */,
 				A962C2A927F5CEC500F74707 /* AppDelegate.swift in Sources */,
 				A984F5FE27FE0E11001EE510 /* ViewControllerPacientes.swift in Sources */,
 				A962C2AB27F5CEC500F74707 /* SceneDelegate.swift in Sources */,
 				A962C2B327F5CEC500F74707 /* Dentalia.xcdatamodeld in Sources */,
+				A99FA678280D356A00583635 /* CalendarioCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

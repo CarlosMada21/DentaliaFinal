@@ -42,26 +42,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row{
-        case 0: let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
-            navigationController?.pushViewController(VCPacientes!, animated: true)
-            break
-        case 1:let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
-            navigationController?.pushViewController(VCPacientes!, animated: true)
-            break
-        case 2:let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
-            navigationController?.pushViewController(VCPacientes!, animated: true)
-            break
-        case 3:let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
-            navigationController?.pushViewController(VCPacientes!, animated: true)
-            break
-        case 4:let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
-            navigationController?.pushViewController(VCPacientes!, animated: true)
-            break
-        case 5:let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
-            navigationController?.pushViewController(VCPacientes!, animated: true)
-            break
-        default:
-            print("Sin selección")
+            case 0: let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
+                navigationController?.pushViewController(VCPacientes!, animated: true)
+                break
+            case 1:let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
+                navigationController?.pushViewController(VCPacientes!, animated: true)
+                break
+            case 2:let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
+                navigationController?.pushViewController(VCPacientes!, animated: true)
+                break
+            case 3:let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
+                navigationController?.pushViewController(VCPacientes!, animated: true)
+                break
+            case 4:let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
+                navigationController?.pushViewController(VCPacientes!, animated: true)
+                break
+            case 5:let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
+                navigationController?.pushViewController(VCPacientes!, animated: true)
+                break
+            default:
+                print("Sin selección")
         }
     }
  
