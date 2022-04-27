@@ -22,6 +22,9 @@
 		A99FA678280D356A00583635 /* CalendarioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA677280D356A00583635 /* CalendarioCell.swift */; };
 		A99FA67A280D379100583635 /* ViewControllerCalendario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA679280D379100583635 /* ViewControllerCalendario.swift */; };
 		A99FA67C280DE08E00583635 /* Calendario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA67B280DE08E00583635 /* Calendario.swift */; };
+		A9E1C91E2818BC2C00EFB7A6 /* Pacientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E1C91D2818BC2C00EFB7A6 /* Pacientes.swift */; };
+		A9E1C9202818BC4900EFB7A6 /* Tratamiento.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E1C91F2818BC4900EFB7A6 /* Tratamiento.swift */; };
+		A9E1C9222818BED800EFB7A6 /* Presupuesto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E1C9212818BED800EFB7A6 /* Presupuesto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		A99FA677280D356A00583635 /* CalendarioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioCell.swift; sourceTree = "<group>"; };
 		A99FA679280D379100583635 /* ViewControllerCalendario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCalendario.swift; sourceTree = "<group>"; };
 		A99FA67B280DE08E00583635 /* Calendario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendario.swift; sourceTree = "<group>"; };
+		A9E1C91D2818BC2C00EFB7A6 /* Pacientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pacientes.swift; sourceTree = "<group>"; };
+		A9E1C91F2818BC4900EFB7A6 /* Tratamiento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tratamiento.swift; sourceTree = "<group>"; };
+		A9E1C9212818BED800EFB7A6 /* Presupuesto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presupuesto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,9 @@
 				A962C2AC27F5CEC500F74707 /* ViewController.swift */,
 				A962C2AE27F5CEC500F74707 /* Main.storyboard */,
 				A99FA679280D379100583635 /* ViewControllerCalendario.swift */,
+				A9E1C91F2818BC4900EFB7A6 /* Tratamiento.swift */,
+				A9E1C9212818BED800EFB7A6 /* Presupuesto.swift */,
+				A9E1C91D2818BC2C00EFB7A6 /* Pacientes.swift */,
 				A99FA67B280DE08E00583635 /* Calendario.swift */,
 				A99FA677280D356A00583635 /* CalendarioCell.swift */,
 				A984F5FF27FEFDC8001EE510 /* Agenda.storyboard */,
@@ -284,7 +293,10 @@
 				A962C2AB27F5CEC500F74707 /* SceneDelegate.swift in Sources */,
 				A99FA67C280DE08E00583635 /* Calendario.swift in Sources */,
 				A962C2B327F5CEC500F74707 /* Dentalia.xcdatamodeld in Sources */,
+				A9E1C9222818BED800EFB7A6 /* Presupuesto.swift in Sources */,
 				A99FA678280D356A00583635 /* CalendarioCell.swift in Sources */,
+				A9E1C9202818BC4900EFB7A6 /* Tratamiento.swift in Sources */,
+				A9E1C91E2818BC2C00EFB7A6 /* Pacientes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

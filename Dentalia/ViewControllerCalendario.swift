@@ -55,7 +55,25 @@ class ViewControllerCalendario: UIViewController, UICollectionViewDelegate, UICo
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "calCell", for: indexPath) as! CalendarioCell
         cell.lbDiaMes.text = cuadradosTotales[indexPath.item]
+        print(fechaSeleccionada.description + "\n \(indexPath.item)")
+        //cell.backgroundColor = UIColor(red: 36/255, green: 153/255, blue: 255/255, alpha: 1)*/
+        print("Hola")
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "calCell", for: indexPath) as! CalendarioCell
+        cell.backgroundColor = UIColor.systemGreen
+        print("Hola1")
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        print("Hola2")
+    }
+    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        print("Hola3")
+        return true
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
