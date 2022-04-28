@@ -17,11 +17,12 @@
 		A962C2C327F5CEC800F74707 /* DentaliaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2C227F5CEC800F74707 /* DentaliaTests.swift */; };
 		A962C2CD27F5CEC800F74707 /* DentaliaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2CC27F5CEC800F74707 /* DentaliaUITests.swift */; };
 		A962C2CF27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2CE27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift */; };
-		A984F5FE27FE0E11001EE510 /* ViewControllerPacientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A984F5FD27FE0E11001EE510 /* ViewControllerPacientes.swift */; };
 		A984F60027FEFDC9001EE510 /* Agenda.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A984F5FF27FEFDC8001EE510 /* Agenda.storyboard */; };
 		A99FA678280D356A00583635 /* CalendarioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA677280D356A00583635 /* CalendarioCell.swift */; };
 		A99FA67A280D379100583635 /* ViewControllerCalendario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA679280D379100583635 /* ViewControllerCalendario.swift */; };
 		A99FA67C280DE08E00583635 /* Calendario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA67B280DE08E00583635 /* Calendario.swift */; };
+		A9AEA2AF281AB38B00145B19 /* ViewControllerPacientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AEA2AE281AB38B00145B19 /* ViewControllerPacientes.swift */; };
+		A9AEA2B1281AC98200145B19 /* TableViewControllerPacientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AEA2B0281AC98200145B19 /* TableViewControllerPacientes.swift */; };
 		A9E1C91E2818BC2C00EFB7A6 /* Pacientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E1C91D2818BC2C00EFB7A6 /* Pacientes.swift */; };
 		A9E1C9202818BC4900EFB7A6 /* Tratamiento.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E1C91F2818BC4900EFB7A6 /* Tratamiento.swift */; };
 		A9E1C9222818BED800EFB7A6 /* Presupuesto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E1C9212818BED800EFB7A6 /* Presupuesto.swift */; };
@@ -59,11 +60,12 @@
 		A962C2C827F5CEC800F74707 /* DentaliaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DentaliaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A962C2CC27F5CEC800F74707 /* DentaliaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentaliaUITests.swift; sourceTree = "<group>"; };
 		A962C2CE27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentaliaUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		A984F5FD27FE0E11001EE510 /* ViewControllerPacientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPacientes.swift; sourceTree = "<group>"; };
 		A984F5FF27FEFDC8001EE510 /* Agenda.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Agenda.storyboard; sourceTree = "<group>"; };
 		A99FA677280D356A00583635 /* CalendarioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioCell.swift; sourceTree = "<group>"; };
 		A99FA679280D379100583635 /* ViewControllerCalendario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCalendario.swift; sourceTree = "<group>"; };
 		A99FA67B280DE08E00583635 /* Calendario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendario.swift; sourceTree = "<group>"; };
+		A9AEA2AE281AB38B00145B19 /* ViewControllerPacientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPacientes.swift; sourceTree = "<group>"; };
+		A9AEA2B0281AC98200145B19 /* TableViewControllerPacientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerPacientes.swift; sourceTree = "<group>"; };
 		A9E1C91D2818BC2C00EFB7A6 /* Pacientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pacientes.swift; sourceTree = "<group>"; };
 		A9E1C91F2818BC4900EFB7A6 /* Tratamiento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tratamiento.swift; sourceTree = "<group>"; };
 		A9E1C9212818BED800EFB7A6 /* Presupuesto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presupuesto.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		A962C29C27F5CEC500F74707 = {
 			isa = PBXGroup;
 			children = (
+				A9AEA2B0281AC98200145B19 /* TableViewControllerPacientes.swift */,
 				A962C2A727F5CEC500F74707 /* Dentalia */,
 				A962C2C127F5CEC800F74707 /* DentaliaTests */,
 				A962C2CB27F5CEC800F74707 /* DentaliaUITests */,
@@ -128,11 +131,11 @@
 				A99FA67B280DE08E00583635 /* Calendario.swift */,
 				A99FA677280D356A00583635 /* CalendarioCell.swift */,
 				A984F5FF27FEFDC8001EE510 /* Agenda.storyboard */,
-				A984F5FD27FE0E11001EE510 /* ViewControllerPacientes.swift */,
 				A962C2B427F5CEC800F74707 /* Assets.xcassets */,
 				A962C2B627F5CEC800F74707 /* LaunchScreen.storyboard */,
 				A962C2B927F5CEC800F74707 /* Info.plist */,
 				A962C2B127F5CEC500F74707 /* Dentalia.xcdatamodeld */,
+				A9AEA2AE281AB38B00145B19 /* ViewControllerPacientes.swift */,
 			);
 			path = Dentalia;
 			sourceTree = "<group>";
@@ -289,12 +292,13 @@
 				A99FA67A280D379100583635 /* ViewControllerCalendario.swift in Sources */,
 				A962C2AD27F5CEC500F74707 /* ViewController.swift in Sources */,
 				A962C2A927F5CEC500F74707 /* AppDelegate.swift in Sources */,
-				A984F5FE27FE0E11001EE510 /* ViewControllerPacientes.swift in Sources */,
 				A962C2AB27F5CEC500F74707 /* SceneDelegate.swift in Sources */,
 				A99FA67C280DE08E00583635 /* Calendario.swift in Sources */,
 				A962C2B327F5CEC500F74707 /* Dentalia.xcdatamodeld in Sources */,
 				A9E1C9222818BED800EFB7A6 /* Presupuesto.swift in Sources */,
 				A99FA678280D356A00583635 /* CalendarioCell.swift in Sources */,
+				A9AEA2B1281AC98200145B19 /* TableViewControllerPacientes.swift in Sources */,
+				A9AEA2AF281AB38B00145B19 /* ViewControllerPacientes.swift in Sources */,
 				A9E1C9202818BC4900EFB7A6 /* Tratamiento.swift in Sources */,
 				A9E1C91E2818BC2C00EFB7A6 /* Pacientes.swift in Sources */,
 			);

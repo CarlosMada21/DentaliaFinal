@@ -35,6 +35,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //Texto para cada opcion del menu
         celdaMenuPrincipal.textLabel?.text  = opcionesMenuPrincipal[indexPath.row]
         celdaMenuPrincipal.backgroundColor = UIColor(red: 36/255, green: 153/255, blue: 255/255, alpha: 1)
+        
         celdaMenuPrincipal.textLabel?.textColor = UIColor.white
         
         return celdaMenuPrincipal
@@ -45,19 +46,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             case 0: let VCCalendario = storyboard?.instantiateViewController (identifier: "Calendario") as? ViewControllerCalendario
                 navigationController?.pushViewController(VCCalendario!, animated: true)
                 break
-            case 1:let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
+        case 1: /*let VCPacientes = storyboard?.instantiateViewController(withIdentifier: "VCPacientes") as? ViewControllerPacientes
+            navigationController?.pushViewController(VCPacientes!, animated: true)
+                */print("Hola")
+            break
+            case 2: let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerCalendario
                 navigationController?.pushViewController(VCPacientes!, animated: true)
                 break
-            case 2:let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
+            case 3: let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerCalendario
                 navigationController?.pushViewController(VCPacientes!, animated: true)
                 break
-            case 3:let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
+            case 4: let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerCalendario
                 navigationController?.pushViewController(VCPacientes!, animated: true)
                 break
-            case 4:let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
-                navigationController?.pushViewController(VCPacientes!, animated: true)
-                break
-            case 5:let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerPacientes
+            case 5: let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerCalendario
                 navigationController?.pushViewController(VCPacientes!, animated: true)
                 break
             default:

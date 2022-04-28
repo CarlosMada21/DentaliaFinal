@@ -2,16 +2,41 @@
 //  ViewControllerPacientes.swift
 //  Dentalia
 //
-//  Created by Master Pain on 06/04/22.
+//  Created by Master Pain on 28/04/22.
 //
 
 import UIKit
 
-class ViewControllerPacientes: UIViewController {
+class ViewControllerPacientes: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+    var aPacientes: [Paciente] = [Paciente(), Paciente(edad: 21, nombre: "Carlos", tratamiento: Tratamiento())]
+    
+    @IBOutlet weak var tvPacientes: UITableView!
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return aPacientes.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let celdaMenuPacientes = tableView.dequeueReusableCell(withIdentifier: "TableViewCellPacientes") as! CeldaPacientes
+        /*let p1: Paciente = aPacientes[indexPath.item]
+        
+        celdaMenuPacientes.lbNombre.text = p1.sNombre
+        celdaMenuPacientes.lbEdad.text = String(p1.eEdad)
+        celdaMenuPacientes.lbTratamiento.text = p1.tTratamiento.sNombre
+        */
+        /*celdaMenuPacientes.lbNombre.text = "lop"
+        celdaMenuPacientes.lbEdad.text = "po"
+        celdaMenuPacientes.lbTratamiento.text = ""
+        */
+        return celdaMenuPacientes
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tvPacientes.dataSource = self
+        tvPacientes.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -26,4 +51,8 @@ class ViewControllerPacientes: UIViewController {
     }
     */
 
+}
+
+class CeldaPacientes: UITableViewCell{
+   
 }

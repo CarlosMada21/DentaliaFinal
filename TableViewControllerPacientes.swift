@@ -1,0 +1,107 @@
+//
+//  TableViewControllerPacientes.swift
+//  Dentalia
+//
+//  Created by Master Pain on 28/04/22.
+//
+
+import UIKit
+
+class CeldaPaciente:  UITableViewCell{
+    
+    @IBOutlet weak var lnNombre: UILabel!
+    @IBOutlet weak var lbEdad: UILabel!
+    @IBOutlet weak var lbTratamiento: UILabel!
+}
+
+class TableViewControllerPacientes: UITableViewController {
+
+    var aPacientes: [Paciente] = [Paciente(), Paciente(edad: 21, nombre: "Carlos", tratamiento: Tratamiento())]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Uncomment the following line to preserve selection between presentations
+        // self.clearsSelectionOnViewWillAppear = false
+
+        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+
+    // MARK: - Table view data source
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1//aPacientes.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let celdaMenuPacientes = tableView.dequeueReusableCell(withIdentifier: "TableViewCellPacientes") as! CeldaPaciente
+        /*let p1: Paciente = aPacientes[indexPath.item]
+        
+        celdaMenuPacientes.lbNombre.text = p1.sNombre
+        celdaMenuPacientes.lbEdad.text = String(p1.eEdad)
+        celdaMenuPacientes.lbTratamiento.text = p1.tTratamiento.sNombre
+        */
+        /*celdaMenuPacientes.lbNombre.text = "lop"
+        celdaMenuPacientes.lbEdad.text = "po"
+        celdaMenuPacientes.lbTratamiento.text = ""
+        */
+        celdaMenuPacientes.lnNombre.text = "Hola"
+        return celdaMenuPacientes
+    }
+    /*
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
+        return cell
+    }
+    */
+
+    /*
+    // Override to support conditional editing of the table view.
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the specified item to be editable.
+        return true
+    }
+    */
+
+    /*
+    // Override to support editing the table view.
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Delete the row from the data source
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }    
+    }
+    */
+
+    /*
+    // Override to support rearranging the table view.
+    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+
+    }
+    */
+
+    /*
+    // Override to support conditional rearranging of the table view.
+    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        // Return false if you do not want the item to be re-orderable.
+        return true
+    }
+    */
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+    
+}
