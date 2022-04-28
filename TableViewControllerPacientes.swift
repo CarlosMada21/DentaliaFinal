@@ -31,22 +31,17 @@ class TableViewControllerPacientes: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1//aPacientes.count
+        return aPacientes.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celdaMenuPacientes = tableView.dequeueReusableCell(withIdentifier: "TableViewCellPacientes") as! CeldaPaciente
-        /*let p1: Paciente = aPacientes[indexPath.item]
+        celdaMenuPacientes.lnNombre.text = aPacientes[indexPath.item].sNombre
+        celdaMenuPacientes.lbEdad.text = String(aPacientes[indexPath.item].eEdad)
+        celdaMenuPacientes.lbTratamiento.text = aPacientes[indexPath.item].tTratamiento.sNombre
         
-        celdaMenuPacientes.lbNombre.text = p1.sNombre
-        celdaMenuPacientes.lbEdad.text = String(p1.eEdad)
-        celdaMenuPacientes.lbTratamiento.text = p1.tTratamiento.sNombre
-        */
-        /*celdaMenuPacientes.lbNombre.text = "lop"
-        celdaMenuPacientes.lbEdad.text = "po"
-        celdaMenuPacientes.lbTratamiento.text = ""
-        */
-        celdaMenuPacientes.lnNombre.text = "Hola"
+        celdaMenuPacientes.backgroundColor = UIColor(red: 36/255, green: 153/255, blue: 255/255, alpha: 1)
+        
         return celdaMenuPacientes
     }
     /*
