@@ -7,15 +7,20 @@
 
 import Foundation
 
+var aPacientes: [Paciente] = []
+
 struct Paciente {
+    
+    var eID: Int = 0
     var eEdad: Int = 0
     var sNombre: String = ""
-    var tTratamiento: Tratamiento = Tratamiento()
+    var sTratamiento: String = ""
+    
     init() {}
-    init (edad eEdad: Int, nombre sNombre: String, tratamiento tTratamiento: Tratamiento){
+    init (edad eEdad: Int, nombre sNombre: String, tratamiento sTratamiento: String){
         self.eEdad = eEdad
         self.sNombre = sNombre
-        self.tTratamiento = tTratamiento
+        self.sTratamiento = sTratamiento
     }
     
 }

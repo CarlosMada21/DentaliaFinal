@@ -15,8 +15,6 @@ class CeldaPaciente:  UITableViewCell{
 }
 
 class TableViewControllerPacientes: UITableViewController {
-
-    var aPacientes: [Paciente] = [Paciente(), Paciente(edad: 21, nombre: "Carlos Daniel Madariaga del Río", tratamiento: Tratamiento(tratamiento: "Encías inflamadas", costo: 790.89, duracion: 3)), Paciente(edad: 21, nombre: "Carlos Daniel Madariaga del Río", tratamiento: Tratamiento(tratamiento: "Encías inflamadas", costo: 790.89, duracion: 3)), Paciente(edad: 21, nombre: "Carlos Daniel Madariaga del Río", tratamiento: Tratamiento(tratamiento: "Encías inflamadas", costo: 790.89, duracion: 3)), Paciente(edad: 21, nombre: "Carlos Daniel Madariaga del Río", tratamiento: Tratamiento(tratamiento: "Encías inflamadas", costo: 790.89, duracion: 3))]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,8 +36,7 @@ class TableViewControllerPacientes: UITableViewController {
         let celdaMenuPacientes = tableView.dequeueReusableCell(withIdentifier: "TableViewCellPacientes") as! CeldaPaciente
         celdaMenuPacientes.lnNombre.text = aPacientes[indexPath.item].sNombre
         celdaMenuPacientes.lbEdad.text = String(aPacientes[indexPath.item].eEdad)
-        celdaMenuPacientes.lbTratamiento.text = aPacientes[indexPath.item].tTratamiento.sNombre
-        
+        celdaMenuPacientes.lbTratamiento.text = aPacientes[indexPath.item].sTratamiento
         celdaMenuPacientes.backgroundColor = UIColor(red: 36/255, green: 153/255, blue: 255/255, alpha: 1)
         
         return celdaMenuPacientes

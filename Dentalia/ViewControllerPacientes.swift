@@ -9,7 +9,7 @@ import UIKit
 
 class ViewControllerPacientes: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var aPacientes: [Paciente] = [Paciente(), Paciente(edad: 21, nombre: "Carlos", tratamiento: Tratamiento())]
+    var aPacientes: [Paciente] = [Paciente(), Paciente(edad: 21, nombre: "Carlos", tratamiento: "")]
     
     @IBOutlet weak var tvPacientes: UITableView!
 

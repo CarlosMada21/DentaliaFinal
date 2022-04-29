@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A91FADA8281B35E100CB18DD /* GuardarCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FADA7281B35E100CB18DD /* GuardarCore.swift */; };
+		A91FADAA281BFC9200CB18DD /* ViewControllerAltaPaciente.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FADA9281BFC9200CB18DD /* ViewControllerAltaPaciente.swift */; };
 		A962C2A927F5CEC500F74707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2A827F5CEC500F74707 /* AppDelegate.swift */; };
 		A962C2AB27F5CEC500F74707 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2AA27F5CEC500F74707 /* SceneDelegate.swift */; };
 		A962C2AD27F5CEC500F74707 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2AC27F5CEC500F74707 /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		A91FADA7281B35E100CB18DD /* GuardarCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardarCore.swift; sourceTree = "<group>"; };
+		A91FADA9281BFC9200CB18DD /* ViewControllerAltaPaciente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAltaPaciente.swift; sourceTree = "<group>"; };
 		A962C2A527F5CEC500F74707 /* Dentalia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dentalia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A962C2A827F5CEC500F74707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A962C2AA27F5CEC500F74707 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				A962C2AA27F5CEC500F74707 /* SceneDelegate.swift */,
 				A962C2AC27F5CEC500F74707 /* ViewController.swift */,
 				A962C2AE27F5CEC500F74707 /* Main.storyboard */,
+				A91FADA9281BFC9200CB18DD /* ViewControllerAltaPaciente.swift */,
 				A99FA679280D379100583635 /* ViewControllerCalendario.swift */,
 				A9E1C91F2818BC4900EFB7A6 /* Tratamiento.swift */,
 				A9E1C9212818BED800EFB7A6 /* Presupuesto.swift */,
@@ -300,6 +303,7 @@
 				A962C2B327F5CEC500F74707 /* Dentalia.xcdatamodeld in Sources */,
 				A9E1C9222818BED800EFB7A6 /* Presupuesto.swift in Sources */,
 				A99FA678280D356A00583635 /* CalendarioCell.swift in Sources */,
+				A91FADAA281BFC9200CB18DD /* ViewControllerAltaPaciente.swift in Sources */,
 				A91FADA8281B35E100CB18DD /* GuardarCore.swift in Sources */,
 				A9AEA2B1281AC98200145B19 /* TableViewControllerPacientes.swift in Sources */,
 				A9AEA2AF281AB38B00145B19 /* ViewControllerPacientes.swift in Sources */,
