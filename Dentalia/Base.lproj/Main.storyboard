@@ -49,7 +49,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="TOCAME"/>
                                 <connections>
-                                    <segue destination="SNM-ih-Lru" kind="show" id="e4A-dd-FgX"/>
+                                    <segue destination="EuH-S7-pkh" kind="show" id="qEd-G1-24U"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -231,14 +231,15 @@
             </objects>
             <point key="canvasLocation" x="-607" y="750"/>
         </scene>
-        <!--Table View Controller Pacientes-->
+        <!--Mostrar-->
         <scene sceneID="NvS-Bl-aJb">
             <objects>
                 <viewController storyboardIdentifier="VCAgregarPaciente" id="RPu-Qd-r93" customClass="TableViewControllerPacientes" customModule="Dentalia" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="izr-d8-zle">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="2" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="izr-d8-zle">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="separatorColor" red="0.14117647058823529" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.14117647058823529" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCellPacientes" rowHeight="95" id="HR9-kG-UOb" customClass="CeldaPaciente" customModule="Dentalia" customModuleProvider="target">
@@ -249,63 +250,66 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Tlr-Sl-gG3">
-                                            <rect key="frame" x="0.0" y="0.0" width="103.5" height="95"/>
+                                            <rect key="frame" x="10" y="0.0" width="103.5" height="95"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r90-Ng-iuB">
                                                     <rect key="frame" x="0.0" y="0.0" width="103.5" height="31.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2Y-If-RyR">
                                                     <rect key="frame" x="0.0" y="31.5" width="103.5" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tratamiento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ch2-9k-eOa">
                                                     <rect key="frame" x="0.0" y="63.5" width="103.5" height="31.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.14117647058823529" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </stackView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ilC-Br-fMS">
-                                            <rect key="frame" x="103.5" y="0.0" width="310.5" height="95"/>
+                                            <rect key="frame" x="135" y="0.0" width="269" height="95"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grx-LC-BWL">
-                                                    <rect key="frame" x="0.0" y="0.0" width="310.5" height="31.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="269" height="31.5"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="edad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbN-q1-O90">
-                                                    <rect key="frame" x="0.0" y="31.5" width="310.5" height="32"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="0.0" y="31.5" width="269" height="32"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tratamiento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iV7-oj-G3s">
-                                                    <rect key="frame" x="0.0" y="63.5" width="310.5" height="31.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="0.0" y="63.5" width="269" height="31.5"/>
+                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </stackView>
                                     </subviews>
+                                    <color key="backgroundColor" red="0.14117647058823529" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstItem="Tlr-Sl-gG3" firstAttribute="top" secondItem="hV3-xD-uma" secondAttribute="top" id="2rF-Pi-4v5"/>
                                         <constraint firstItem="Tlr-Sl-gG3" firstAttribute="width" secondItem="hV3-xD-uma" secondAttribute="width" multiplier="0.25" id="7qf-KU-jTC"/>
                                         <constraint firstItem="ilC-Br-fMS" firstAttribute="top" secondItem="hV3-xD-uma" secondAttribute="top" id="T9j-Ha-Zuh"/>
                                         <constraint firstItem="Tlr-Sl-gG3" firstAttribute="height" secondItem="hV3-xD-uma" secondAttribute="height" id="XKM-W1-KWJ"/>
-                                        <constraint firstItem="Tlr-Sl-gG3" firstAttribute="leading" secondItem="hV3-xD-uma" secondAttribute="leading" id="cgG-So-8l8"/>
-                                        <constraint firstAttribute="trailing" secondItem="ilC-Br-fMS" secondAttribute="trailing" id="olu-Ai-GSy"/>
-                                        <constraint firstItem="ilC-Br-fMS" firstAttribute="width" secondItem="hV3-xD-uma" secondAttribute="width" multiplier="0.75" id="s1B-Ll-LlE"/>
+                                        <constraint firstItem="Tlr-Sl-gG3" firstAttribute="leading" secondItem="hV3-xD-uma" secondAttribute="leading" constant="10" id="cgG-So-8l8"/>
+                                        <constraint firstAttribute="trailing" secondItem="ilC-Br-fMS" secondAttribute="trailing" constant="10" id="olu-Ai-GSy"/>
+                                        <constraint firstItem="ilC-Br-fMS" firstAttribute="width" secondItem="hV3-xD-uma" secondAttribute="width" multiplier="0.65" id="s1B-Ll-LlE"/>
                                         <constraint firstItem="ilC-Br-fMS" firstAttribute="height" secondItem="hV3-xD-uma" secondAttribute="height" id="xwV-kV-5y9"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.14117647058823529" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <outlet property="lbEdad" destination="KbN-q1-O90" id="UnM-Vv-75e"/>
                                     <outlet property="lbTratamiento" destination="iV7-oj-G3s" id="4yN-pZ-xd6"/>
@@ -314,13 +318,50 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Mostrar" image="person.circle" catalog="system" id="Gto-uI-wmR"/>
                     <navigationItem key="navigationItem" id="yuk-I1-hNz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOm-jo-y7n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="949" y="-137"/>
+            <point key="canvasLocation" x="935" y="115"/>
         </scene>
-        <!--View Controller-->
+        <!--Actualizar-->
+        <scene sceneID="UrA-Jx-kcQ">
+            <objects>
+                <viewController id="cRh-4x-Ksy" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="knO-Qv-jQ9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="S9U-KO-j0l"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Actualizar" image="pencil" catalog="system" id="fxV-eH-B9b"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gVU-lE-dBs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="442" y="-1182"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2TN-yN-QAm">
+            <objects>
+                <tabBarController storyboardIdentifier="TBCPacientes" id="EuH-S7-pkh" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="mfX-qH-JD3"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YDo-X6-E8v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="RPu-Qd-r93" kind="relationship" relationship="viewControllers" id="NcY-Hr-34A"/>
+                        <segue destination="SNM-ih-Lru" kind="relationship" relationship="viewControllers" id="Flg-e3-4gf"/>
+                        <segue destination="cRh-4x-Ksy" kind="relationship" relationship="viewControllers" id="33u-9k-oAu"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mCh-BA-F5t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-483" y="-695"/>
+        </scene>
+        <!--Agregar-->
         <scene sceneID="IOQ-PP-Zar">
             <objects>
                 <viewController storyboardIdentifier="VCPacientes" id="SNM-ih-Lru" sceneMemberID="viewController">
@@ -334,19 +375,81 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="qo4-7d-FiG">
+                                <rect key="frame" x="100" y="191" width="145" height="290"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="okW-Yr-C5s">
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="96.5"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0HG-7z-UHn">
+                                        <rect key="frame" x="0.0" y="96.5" width="145" height="97"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tratamiento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d9x-eb-8XD">
+                                        <rect key="frame" x="0.0" y="193.5" width="145" height="96.5"/>
+                                        <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="Wbf-aT-xtT">
+                                <rect key="frame" x="220.5" y="225" width="108.5" height="220"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hdo-Em-Fy2">
+                                        <rect key="frame" x="0.0" y="0.0" width="108.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f7h-qt-mrS">
+                                        <rect key="frame" x="0.0" y="96.5" width="108.5" height="27"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sy3-yp-8fu">
+                                        <rect key="frame" x="0.0" y="193.5" width="108.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmc-av-kw5">
+                                <rect key="frame" x="169" y="624" width="76.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Guardar"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pdb-Gr-cYB"/>
                         <color key="backgroundColor" red="1" green="0.34433405192429545" blue="0.48644710886603504" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Wbf-aT-xtT" firstAttribute="width" secondItem="qo4-7d-FiG" secondAttribute="width" multiplier="0.75" id="1Q7-f2-g0B"/>
+                            <constraint firstItem="qo4-7d-FiG" firstAttribute="height" secondItem="pdb-Gr-cYB" secondAttribute="height" multiplier="0.4" id="1xu-XK-Eip"/>
+                            <constraint firstItem="qo4-7d-FiG" firstAttribute="width" secondItem="pdb-Gr-cYB" secondAttribute="width" multiplier="0.35" id="D4q-yq-7Va"/>
+                            <constraint firstItem="pdb-Gr-cYB" firstAttribute="bottom" secondItem="dmc-av-kw5" secondAttribute="bottom" constant="158" id="Etl-ok-fRL"/>
                             <constraint firstItem="dgs-rj-hlp" firstAttribute="centerX" secondItem="pdb-Gr-cYB" secondAttribute="centerX" id="J2a-QG-PQT"/>
+                            <constraint firstItem="pdb-Gr-cYB" firstAttribute="trailing" secondItem="Wbf-aT-xtT" secondAttribute="trailing" constant="85" id="L4M-k4-DgW"/>
+                            <constraint firstItem="dmc-av-kw5" firstAttribute="width" secondItem="pdb-Gr-cYB" secondAttribute="width" multiplier="0.184783" id="M08-pM-1nH"/>
+                            <constraint firstItem="Wbf-aT-xtT" firstAttribute="height" secondItem="qo4-7d-FiG" secondAttribute="height" constant="-70" id="O7f-rV-A8j"/>
+                            <constraint firstItem="dmc-av-kw5" firstAttribute="centerX" secondItem="pdb-Gr-cYB" secondAttribute="centerX" id="QvJ-Kn-4Uh"/>
+                            <constraint firstItem="Wbf-aT-xtT" firstAttribute="top" secondItem="dgs-rj-hlp" secondAttribute="bottom" constant="110" id="VOe-HP-0kx"/>
+                            <constraint firstItem="dmc-av-kw5" firstAttribute="height" secondItem="pdb-Gr-cYB" secondAttribute="height" multiplier="0.0427586" id="g0A-n8-kWS"/>
+                            <constraint firstItem="qo4-7d-FiG" firstAttribute="leading" secondItem="pdb-Gr-cYB" secondAttribute="leading" constant="100" id="iSZ-Fs-sX2"/>
+                            <constraint firstItem="dmc-av-kw5" firstAttribute="top" secondItem="qo4-7d-FiG" secondAttribute="bottom" constant="143" id="idD-pa-U04"/>
+                            <constraint firstItem="qo4-7d-FiG" firstAttribute="top" secondItem="dgs-rj-hlp" secondAttribute="bottom" constant="76" id="veL-qd-0Oi"/>
                             <constraint firstItem="dgs-rj-hlp" firstAttribute="top" secondItem="pdb-Gr-cYB" secondAttribute="top" id="wCm-Wx-UDZ"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Agregar" image="person.fill.badge.plus" catalog="system" id="ZBc-cT-j02"/>
                     <navigationItem key="navigationItem" id="VGp-vb-ifC"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="94O-50-wgm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="209" y="48"/>
+            <point key="canvasLocation" x="876.81159420289862" y="-571.20535714285711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="61P-yr-KpE">
@@ -368,6 +471,9 @@
     <resources>
         <image name="arrowshape.turn.up.left.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrowshape.turn.up.right.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="person.fill.badge.plus" catalog="system" width="128" height="124"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -14,12 +14,12 @@ func getContext() -> NSManagedObjectContext{
     return(UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 }
 
-func recoverRecordatorio() -> [Paciente]{
+func recoverRecordatorio() -> [Pacientes]{
         
-    var recordatorios: [Recordatorio]?
+    var recordatorios: [Pacientes]?
     
     let context = getContext()
-    let fetchRequest: NSFetchRequest<Recordatorio> = Recordatorio.fetchRequest()
+    let fetchRequest: NSFetchRequest<Pacientes> = Pacientes.fetchRequest()
     
     do {
         recordatorios = try context.fetch(fetchRequest)
@@ -34,7 +34,7 @@ func saveEntityRecordatorio(recordatorio : String) {
     let context = getContext()
     
     let entityRecordatorio = NSEntityDescription.entity(forEntityName: "Recordatorio", in: context)!
-    let recordatorioManaged = NSManagedObject(entity: entityRecordatorio, insertInto: context) as! Recordatorio
+    let recordatorioManaged = NSManagedObject(entity: entityRecordatorio, insertInto: context) as! Paciente
     recordatorioManaged.recordatorio = recordatorio
     
     do {
@@ -46,7 +46,7 @@ func saveEntityRecordatorio(recordatorio : String) {
     }
 }
 
-func updateEntityRecordatorio (eRecordatorio : Recordatorio, recordatorio : String) {
+func updateEntityRecordatorio (eRecordatorio : Paciente, recordatorio : String) {
         let context = getContext()
         let recordatorioManaged = eRecordatorio as NSManagedObject
         recordatorioManaged.setValue(recordatorio, forKey: "recordatorio")

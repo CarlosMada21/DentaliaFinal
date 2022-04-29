@@ -16,7 +16,7 @@ class CeldaPaciente:  UITableViewCell{
 
 class TableViewControllerPacientes: UITableViewController {
 
-    var aPacientes: [Paciente] = [Paciente(), Paciente(edad: 21, nombre: "Carlos Daniel Madariaga del Río", tratamiento: Tratamiento(tratamiento: "Encías inflamadas", costo: 790.89, duracion: 3))]
+    var aPacientes: [Paciente] = [Paciente(), Paciente(edad: 21, nombre: "Carlos Daniel Madariaga del Río", tratamiento: Tratamiento(tratamiento: "Encías inflamadas", costo: 790.89, duracion: 3)), Paciente(edad: 21, nombre: "Carlos Daniel Madariaga del Río", tratamiento: Tratamiento(tratamiento: "Encías inflamadas", costo: 790.89, duracion: 3)), Paciente(edad: 21, nombre: "Carlos Daniel Madariaga del Río", tratamiento: Tratamiento(tratamiento: "Encías inflamadas", costo: 790.89, duracion: 3)), Paciente(edad: 21, nombre: "Carlos Daniel Madariaga del Río", tratamiento: Tratamiento(tratamiento: "Encías inflamadas", costo: 790.89, duracion: 3))]
     
     override func viewDidLoad() {
         super.viewDidLoad()
