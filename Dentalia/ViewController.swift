@@ -46,9 +46,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             case 0: let VCCalendario = storyboard?.instantiateViewController (identifier: "Calendario") as? ViewControllerCalendario
                 navigationController?.pushViewController(VCCalendario!, animated: true)
                 break
-        case 1: /*let VCPacientes = storyboard?.instantiateViewController(withIdentifier: "VCPacientes") as? ViewControllerPacientes
+        case 1: let VCPacientes = storyboard?.instantiateViewController(withIdentifier: "VCPacientes")//UITableViewController
             navigationController?.pushViewController(VCPacientes!, animated: true)
-                */print("Hola")
             break
             case 2: let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerCalendario
                 navigationController?.pushViewController(VCPacientes!, animated: true)
