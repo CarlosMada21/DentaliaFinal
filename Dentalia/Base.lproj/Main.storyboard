@@ -323,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOm-jo-y7n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1955" y="-571"/>
+            <point key="canvasLocation" x="1706" y="-607"/>
         </scene>
         <!--Actualizar-->
         <scene sceneID="UrA-Jx-kcQ">
@@ -339,7 +339,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="SV6-Z1-3F0">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="SV6-Z1-3F0">
                                 <rect key="frame" x="134" y="275" width="72.5" height="111"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHl-Sf-WyI">
@@ -356,7 +356,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="hva-Ib-8H7">
+                            <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="hva-Ib-8H7">
                                 <rect key="frame" x="223" y="275" width="78" height="111"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="nombre" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7up-QN-uR3">
@@ -381,24 +381,31 @@
                                 <rect key="frame" x="172.5" y="608" width="69" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Buscar"/>
+                                <connections>
+                                    <segue destination="Ehj-q9-u3S" kind="show" id="lLS-yT-qR0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="S9U-KO-j0l"/>
                         <color key="backgroundColor" red="1" green="0.34433405189999999" blue="0.48644710889999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="hva-Ib-8H7" firstAttribute="top" secondItem="S9U-KO-j0l" secondAttribute="top" constant="187" id="5kF-lt-rHR"/>
                             <constraint firstItem="xXT-Qp-AUv" firstAttribute="top" secondItem="S9U-KO-j0l" secondAttribute="top" constant="35" id="EGh-Aq-fhR"/>
                             <constraint firstItem="aS6-9t-Jcq" firstAttribute="top" secondItem="S9U-KO-j0l" secondAttribute="top" constant="520" id="F0m-Ef-m8D"/>
                             <constraint firstItem="xXd-p6-pG9" firstAttribute="centerX" secondItem="S9U-KO-j0l" secondAttribute="centerX" id="JMX-eG-raX"/>
                             <constraint firstItem="xXT-Qp-AUv" firstAttribute="centerX" secondItem="S9U-KO-j0l" secondAttribute="centerX" id="PeQ-j2-Yht"/>
                             <constraint firstItem="xXd-p6-pG9" firstAttribute="top" secondItem="S9U-KO-j0l" secondAttribute="top" id="SeR-zy-WzT"/>
+                            <constraint firstItem="S9U-KO-j0l" firstAttribute="trailing" secondItem="SV6-Z1-3F0" secondAttribute="trailing" constant="207.5" id="T3E-b3-iet"/>
+                            <constraint firstItem="hva-Ib-8H7" firstAttribute="leading" secondItem="S9U-KO-j0l" secondAttribute="leading" constant="223" id="lYl-OG-Jwn"/>
                             <constraint firstItem="aS6-9t-Jcq" firstAttribute="centerX" secondItem="S9U-KO-j0l" secondAttribute="centerX" id="mki-Gl-Tc5"/>
+                            <constraint firstItem="SV6-Z1-3F0" firstAttribute="top" secondItem="S9U-KO-j0l" secondAttribute="top" constant="187" id="sZe-8V-F0f"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Actualizar" image="pencil" catalog="system" id="fxV-eH-B9b"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gVU-lE-dBs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="387" y="-1216"/>
+            <point key="canvasLocation" x="933" y="-1267"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2TN-yN-QAm">
@@ -417,7 +424,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mCh-BA-F5t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-483" y="-695"/>
+            <point key="canvasLocation" x="159" y="-607"/>
         </scene>
         <!--Agregar-->
         <scene sceneID="IOQ-PP-Zar">
@@ -527,7 +534,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="94O-50-wgm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="876.81159420289862" y="-571.20535714285711"/>
+            <point key="canvasLocation" x="932" y="-607"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="61P-yr-KpE">
@@ -554,28 +561,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actualizar Paciente" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbl-Yr-xWY">
-                                <rect key="frame" x="113.5" y="44" width="187.5" height="79"/>
+                                <rect key="frame" x="113.5" y="88" width="187.5" height="54.5"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lex-v3-RdM">
-                                <rect key="frame" x="100" y="199" width="145" height="327"/>
+                                <rect key="frame" x="100" y="218.5" width="145" height="309.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aa-mn-Wy6">
-                                        <rect key="frame" x="0.0" y="0.0" width="145" height="109"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="103"/>
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="19"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKf-Ud-fUf">
-                                        <rect key="frame" x="0.0" y="109" width="145" height="109"/>
+                                        <rect key="frame" x="0.0" y="103" width="145" height="103"/>
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="19"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tratamiento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkV-Ys-pxS">
-                                        <rect key="frame" x="0.0" y="218" width="145" height="109"/>
+                                        <rect key="frame" x="0.0" y="206" width="145" height="103.5"/>
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="19"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -583,27 +590,27 @@
                                 </subviews>
                             </stackView>
                             <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="bxd-gd-hTE">
-                                <rect key="frame" x="220.5" y="233" width="108.5" height="257"/>
+                                <rect key="frame" x="220.5" y="252.5" width="108.5" height="239.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="nombre" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sCM-qQ-NVI">
-                                        <rect key="frame" x="0.0" y="0.0" width="108.5" height="39"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="108.5" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="edad" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHh-8l-eiB">
-                                        <rect key="frame" x="0.0" y="109" width="108.5" height="39"/>
+                                        <rect key="frame" x="0.0" y="103" width="108.5" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="tratamiento" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="77Q-gl-ROr">
-                                        <rect key="frame" x="0.0" y="218" width="108.5" height="39"/>
+                                        <rect key="frame" x="0.0" y="206" width="108.5" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuU-Gv-qup">
-                                <rect key="frame" x="143" y="680" width="128" height="35"/>
+                                <rect key="frame" x="143" y="682" width="128" height="33"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Guardar"/>
                                 <connections>
@@ -650,7 +657,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0DR-zf-rgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1284" y="-1216"/>
+            <point key="canvasLocation" x="1706" y="-1268"/>
         </scene>
     </scenes>
     <resources>

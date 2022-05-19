@@ -33,6 +33,7 @@ class TableViewControllerPacientes: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        tableView.backgroundColor = UIColor(red: 36/255, green: 153/255, blue: 255/255, alpha: 1)
         let celdaMenuPacientes = tableView.dequeueReusableCell(withIdentifier: "TableViewCellPacientes") as! CeldaPaciente
         celdaMenuPacientes.lnNombre.text = aPacientes[indexPath.item].sNombre
         celdaMenuPacientes.lbEdad.text = String(aPacientes[indexPath.item].eEdad)
