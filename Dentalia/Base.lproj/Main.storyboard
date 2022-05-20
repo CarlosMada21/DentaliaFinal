@@ -328,7 +328,7 @@
         <!--Actualizar-->
         <scene sceneID="UrA-Jx-kcQ">
             <objects>
-                <viewController id="cRh-4x-Ksy" sceneMemberID="viewController">
+                <viewController id="cRh-4x-Ksy" customClass="ViewControllerBuscarPaciente" customModule="Dentalia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="knO-Qv-jQ9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -382,7 +382,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Buscar"/>
                                 <connections>
-                                    <segue destination="Ehj-q9-u3S" kind="show" id="39A-dO-3bq"/>
+                                    <action selector="buscarPaciente:" destination="cRh-4x-Ksy" eventType="touchUpInside" id="sqd-kr-rdq"/>
+                                    <segue destination="Ehj-q9-u3S" kind="show" identifier="BuscarPacienteActualizar" id="39A-dO-3bq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -398,6 +399,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Actualizar" image="pencil" catalog="system" id="fxV-eH-B9b"/>
+                    <connections>
+                        <outlet property="tfID" destination="2t2-4q-RPy" id="5NH-TY-SUT"/>
+                        <outlet property="tfNombre" destination="7up-QN-uR3" id="OPQ-hk-232"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gVU-lE-dBs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -553,7 +558,7 @@
         <!--Agregar-->
         <scene sceneID="acY-PW-xRU">
             <objects>
-                <viewController storyboardIdentifier="VCAltaPacienteEncontrado" id="Ehj-q9-u3S" customClass="ViewControllerAltaPaciente" customModule="Dentalia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VCAltaPacienteEncontrado" id="Ehj-q9-u3S" customClass="ViewControllerActualizarPaciente" customModule="Dentalia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P1R-7v-Cg3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -653,9 +658,10 @@
                     <tabBarItem key="tabBarItem" title="Agregar" image="person.fill.badge.plus" catalog="system" id="aL9-lr-zHc"/>
                     <navigationItem key="navigationItem" id="KeD-GX-VLa"/>
                     <connections>
-                        <outlet property="edad" destination="uHh-8l-eiB" id="dOl-II-UKB"/>
+                        <outlet property="edad" destination="uHh-8l-eiB" id="e2p-SY-IWB"/>
                         <outlet property="nombre" destination="sCM-qQ-NVI" id="639-O6-4A1"/>
-                        <outlet property="tratamiento" destination="77Q-gl-ROr" id="YLf-mI-FTy"/>
+                        <outlet property="tfNombre" destination="sCM-qQ-NVI" id="irB-d8-ouN"/>
+                        <outlet property="tratamiento" destination="77Q-gl-ROr" id="ymc-A1-hA2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0DR-zf-rgn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
