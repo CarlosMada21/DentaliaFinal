@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L0g-Om-AC7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L0g-Om-AC7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -236,7 +236,7 @@
             <objects>
                 <viewController storyboardIdentifier="VCAgregarPaciente" id="RPu-Qd-r93" customClass="TableViewControllerPacientes" customModule="Dentalia" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="2" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="izr-d8-zle">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <color key="separatorColor" red="0.14117647058823529" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -323,7 +323,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOm-jo-y7n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1955" y="-571"/>
+            <point key="canvasLocation" x="1930" y="-479"/>
         </scene>
         <!--Actualizar-->
         <scene sceneID="UrA-Jx-kcQ">
@@ -381,10 +381,13 @@
                                 <rect key="frame" x="172.5" y="608" width="69" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Buscar"/>
+                                <connections>
+                                    <segue destination="Ehj-q9-u3S" kind="show" id="39A-dO-3bq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="S9U-KO-j0l"/>
-                        <color key="backgroundColor" red="1" green="0.34433405189999999" blue="0.48644710889999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.14117647058823529" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xXT-Qp-AUv" firstAttribute="top" secondItem="S9U-KO-j0l" secondAttribute="top" constant="35" id="EGh-Aq-fhR"/>
                             <constraint firstItem="aS6-9t-Jcq" firstAttribute="top" secondItem="S9U-KO-j0l" secondAttribute="top" constant="520" id="F0m-Ef-m8D"/>
@@ -489,12 +492,14 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Listar"/>
                                 <connections>
-                                    <segue destination="RPu-Qd-r93" kind="show" id="Hlr-o5-cFK"/>
+                                    <segue destination="RPu-Qd-r93" kind="popoverPresentation" popoverAnchorView="gJM-kG-7BW" id="Hlr-o5-cFK">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pdb-Gr-cYB"/>
-                        <color key="backgroundColor" red="1" green="0.34433405192429545" blue="0.48644710886603504" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.14117647058823529" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Wbf-aT-xtT" firstAttribute="width" secondItem="qo4-7d-FiG" secondAttribute="width" multiplier="0.75" id="1Q7-f2-g0B"/>
                             <constraint firstItem="qo4-7d-FiG" firstAttribute="height" secondItem="pdb-Gr-cYB" secondAttribute="height" multiplier="0.4" id="1xu-XK-Eip"/>
@@ -527,7 +532,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="94O-50-wgm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="876.81159420289862" y="-571.20535714285711"/>
+            <point key="canvasLocation" x="874" y="-479"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="61P-yr-KpE">
@@ -554,28 +559,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actualizar Paciente" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbl-Yr-xWY">
-                                <rect key="frame" x="113.5" y="44" width="187.5" height="79"/>
+                                <rect key="frame" x="113.5" y="88" width="187.5" height="54.5"/>
                                 <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lex-v3-RdM">
-                                <rect key="frame" x="100" y="199" width="145" height="327"/>
+                                <rect key="frame" x="100" y="218.5" width="145" height="309.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8aa-mn-Wy6">
-                                        <rect key="frame" x="0.0" y="0.0" width="145" height="109"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="145" height="103"/>
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="19"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKf-Ud-fUf">
-                                        <rect key="frame" x="0.0" y="109" width="145" height="109"/>
+                                        <rect key="frame" x="0.0" y="103" width="145" height="103"/>
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="19"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tratamiento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IkV-Ys-pxS">
-                                        <rect key="frame" x="0.0" y="218" width="145" height="109"/>
+                                        <rect key="frame" x="0.0" y="206" width="145" height="103.5"/>
                                         <fontDescription key="fontDescription" name="KohinoorBangla-Regular" family="Kohinoor Bangla" pointSize="19"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -583,27 +588,27 @@
                                 </subviews>
                             </stackView>
                             <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="bxd-gd-hTE">
-                                <rect key="frame" x="220.5" y="233" width="108.5" height="257"/>
+                                <rect key="frame" x="220.5" y="252.5" width="108.5" height="239.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="nombre" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sCM-qQ-NVI">
-                                        <rect key="frame" x="0.0" y="0.0" width="108.5" height="39"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="108.5" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="edad" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uHh-8l-eiB">
-                                        <rect key="frame" x="0.0" y="109" width="108.5" height="39"/>
+                                        <rect key="frame" x="0.0" y="103" width="108.5" height="33"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="tratamiento" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="77Q-gl-ROr">
-                                        <rect key="frame" x="0.0" y="218" width="108.5" height="39"/>
+                                        <rect key="frame" x="0.0" y="206" width="108.5" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuU-Gv-qup">
-                                <rect key="frame" x="143" y="680" width="128" height="35"/>
+                                <rect key="frame" x="143" y="682" width="128" height="33"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Guardar"/>
                                 <connections>
@@ -614,10 +619,15 @@
                                 <rect key="frame" x="143.5" y="770" width="127" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Listar"/>
+                                <connections>
+                                    <segue destination="RPu-Qd-r93" kind="popoverPresentation" popoverAnchorView="Fek-0k-6Z5" id="dhW-ZK-ND5">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bHa-Wo-ALl"/>
-                        <color key="backgroundColor" red="1" green="0.34433405189999999" blue="0.48644710889999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.14117647058823529" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="lex-v3-RdM" firstAttribute="top" secondItem="qbl-Yr-xWY" secondAttribute="bottom" constant="76" id="24p-P9-23T"/>
                             <constraint firstItem="bxd-gd-hTE" firstAttribute="top" secondItem="qbl-Yr-xWY" secondAttribute="bottom" constant="110" id="2u4-lf-GwZ"/>
@@ -653,6 +663,9 @@
             <point key="canvasLocation" x="1284" y="-1216"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="dhW-ZK-ND5"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.turn.up.left.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrowshape.turn.up.right.circle.fill" catalog="system" width="128" height="121"/>
