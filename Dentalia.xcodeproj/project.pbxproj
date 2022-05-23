@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4D1987BD2837E50B00F9D408 /* ViewControllerBuscarPaciente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1987BC2837E50B00F9D408 /* ViewControllerBuscarPaciente.swift */; };
 		4D1987BF2837F02500F9D408 /* ViewControllerActualizarPaciente.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D1987BE2837F02500F9D408 /* ViewControllerActualizarPaciente.swift */; };
-		A91FADA8281B35E100CB18DD /* GuardarCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FADA7281B35E100CB18DD /* GuardarCore.swift */; };
 		A91FADAA281BFC9200CB18DD /* ViewControllerAltaPaciente.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91FADA9281BFC9200CB18DD /* ViewControllerAltaPaciente.swift */; };
 		A93CA73E283B4C23001F6B90 /* EntidadPaciente+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93CA73C283B4C23001F6B90 /* EntidadPaciente+CoreDataClass.swift */; };
 		A93CA73F283B4C23001F6B90 /* EntidadPaciente+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93CA73D283B4C23001F6B90 /* EntidadPaciente+CoreDataProperties.swift */; };
@@ -30,8 +29,6 @@
 		A9AEA2AF281AB38B00145B19 /* ViewControllerPacientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AEA2AE281AB38B00145B19 /* ViewControllerPacientes.swift */; };
 		A9AEA2B1281AC98200145B19 /* TableViewControllerPacientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AEA2B0281AC98200145B19 /* TableViewControllerPacientes.swift */; };
 		A9E1C91E2818BC2C00EFB7A6 /* Pacientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E1C91D2818BC2C00EFB7A6 /* Pacientes.swift */; };
-		A9E1C9202818BC4900EFB7A6 /* Tratamiento.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E1C91F2818BC4900EFB7A6 /* Tratamiento.swift */; };
-		A9E1C9222818BED800EFB7A6 /* Presupuesto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E1C9212818BED800EFB7A6 /* Presupuesto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +51,6 @@
 /* Begin PBXFileReference section */
 		4D1987BC2837E50B00F9D408 /* ViewControllerBuscarPaciente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerBuscarPaciente.swift; sourceTree = "<group>"; };
 		4D1987BE2837F02500F9D408 /* ViewControllerActualizarPaciente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerActualizarPaciente.swift; sourceTree = "<group>"; };
-		A91FADA7281B35E100CB18DD /* GuardarCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardarCore.swift; sourceTree = "<group>"; };
 		A91FADA9281BFC9200CB18DD /* ViewControllerAltaPaciente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAltaPaciente.swift; sourceTree = "<group>"; };
 		A93CA73C283B4C23001F6B90 /* EntidadPaciente+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntidadPaciente+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A93CA73D283B4C23001F6B90 /* EntidadPaciente+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntidadPaciente+CoreDataProperties.swift"; sourceTree = "<group>"; };
@@ -79,8 +75,6 @@
 		A9AEA2AE281AB38B00145B19 /* ViewControllerPacientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerPacientes.swift; sourceTree = "<group>"; };
 		A9AEA2B0281AC98200145B19 /* TableViewControllerPacientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerPacientes.swift; sourceTree = "<group>"; };
 		A9E1C91D2818BC2C00EFB7A6 /* Pacientes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pacientes.swift; sourceTree = "<group>"; };
-		A9E1C91F2818BC4900EFB7A6 /* Tratamiento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tratamiento.swift; sourceTree = "<group>"; };
-		A9E1C9212818BED800EFB7A6 /* Presupuesto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presupuesto.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,11 +102,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A93CA740283B5776001F6B90 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A93CA73D283B4C23001F6B90 /* EntidadPaciente+CoreDataProperties.swift */,
+				A93CA73C283B4C23001F6B90 /* EntidadPaciente+CoreDataClass.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		A93CA741283B5792001F6B90 /* Calendario */ = {
+			isa = PBXGroup;
+			children = (
+				A99FA679280D379100583635 /* ViewControllerCalendario.swift */,
+				A99FA67B280DE08E00583635 /* Calendario.swift */,
+				A99FA677280D356A00583635 /* CalendarioCell.swift */,
+			);
+			path = Calendario;
+			sourceTree = "<group>";
+		};
 		A962C29C27F5CEC500F74707 = {
 			isa = PBXGroup;
 			children = (
-				A93CA73C283B4C23001F6B90 /* EntidadPaciente+CoreDataClass.swift */,
-				A93CA73D283B4C23001F6B90 /* EntidadPaciente+CoreDataProperties.swift */,
 				A962C2A727F5CEC500F74707 /* Dentalia */,
 				A962C2C127F5CEC800F74707 /* DentaliaTests */,
 				A962C2CB27F5CEC800F74707 /* DentaliaUITests */,
@@ -133,20 +144,15 @@
 		A962C2A727F5CEC500F74707 /* Dentalia */ = {
 			isa = PBXGroup;
 			children = (
-				A9ACED8B283AEDFE000A8F61 /* Pacientes */,
-				A9ACED8A283AEDD5000A8F61 /* Views */,
 				A962C2A827F5CEC500F74707 /* AppDelegate.swift */,
 				A962C2AA27F5CEC500F74707 /* SceneDelegate.swift */,
 				A962C2AC27F5CEC500F74707 /* ViewController.swift */,
-				A99FA679280D379100583635 /* ViewControllerCalendario.swift */,
-				A9E1C91F2818BC4900EFB7A6 /* Tratamiento.swift */,
-				A9E1C9212818BED800EFB7A6 /* Presupuesto.swift */,
-				A99FA67B280DE08E00583635 /* Calendario.swift */,
-				A99FA677280D356A00583635 /* CalendarioCell.swift */,
+				A93CA741283B5792001F6B90 /* Calendario */,
+				A9ACED8B283AEDFE000A8F61 /* Pacientes */,
+				A9ACED8A283AEDD5000A8F61 /* Views */,
 				A962C2B427F5CEC800F74707 /* Assets.xcassets */,
 				A962C2B927F5CEC800F74707 /* Info.plist */,
 				A962C2B127F5CEC500F74707 /* Dentalia.xcdatamodeld */,
-				A91FADA7281B35E100CB18DD /* GuardarCore.swift */,
 			);
 			path = Dentalia;
 			sourceTree = "<group>";
@@ -181,6 +187,7 @@
 		A9ACED8B283AEDFE000A8F61 /* Pacientes */ = {
 			isa = PBXGroup;
 			children = (
+				A93CA740283B5776001F6B90 /* CoreData */,
 				4D1987BE2837F02500F9D408 /* ViewControllerActualizarPaciente.swift */,
 				A91FADA9281BFC9200CB18DD /* ViewControllerAltaPaciente.swift */,
 				A9E1C91D2818BC2C00EFB7A6 /* Pacientes.swift */,
@@ -332,14 +339,11 @@
 				A99FA67C280DE08E00583635 /* Calendario.swift in Sources */,
 				A93CA73E283B4C23001F6B90 /* EntidadPaciente+CoreDataClass.swift in Sources */,
 				A962C2B327F5CEC500F74707 /* Dentalia.xcdatamodeld in Sources */,
-				A9E1C9222818BED800EFB7A6 /* Presupuesto.swift in Sources */,
 				A99FA678280D356A00583635 /* CalendarioCell.swift in Sources */,
 				4D1987BF2837F02500F9D408 /* ViewControllerActualizarPaciente.swift in Sources */,
 				A91FADAA281BFC9200CB18DD /* ViewControllerAltaPaciente.swift in Sources */,
-				A91FADA8281B35E100CB18DD /* GuardarCore.swift in Sources */,
 				A9AEA2B1281AC98200145B19 /* TableViewControllerPacientes.swift in Sources */,
 				A9AEA2AF281AB38B00145B19 /* ViewControllerPacientes.swift in Sources */,
-				A9E1C9202818BC4900EFB7A6 /* Tratamiento.swift in Sources */,
 				A9E1C91E2818BC2C00EFB7A6 /* Pacientes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
