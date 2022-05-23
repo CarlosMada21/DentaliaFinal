@@ -7,7 +7,7 @@
 
 import Foundation
 
-var aPacientes: [Paciente] = []
+//var aPacientes: [Paciente] = []
 
 struct Paciente {
     

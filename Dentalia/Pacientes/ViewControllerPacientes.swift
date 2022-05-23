@@ -11,6 +11,7 @@ class ViewControllerPacientes: UIViewController, UITableViewDataSource, UITableV
 
     var aPacientes: [Paciente] = [Paciente(), Paciente(edad: 21, nombre: "Carlos", tratamiento: "")]
     
+    
     @IBOutlet weak var tvPacientes: UITableView!
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

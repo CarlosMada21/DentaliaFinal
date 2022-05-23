@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G527" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="20G624" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="EntidadPaciente" representedClassName="EntidadPaciente" syncable="YES">
+        <attribute name="eEdad" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="eID" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sDomicilio" optional="YES" attributeType="String"/>
+        <attribute name="sGenero" optional="YES" attributeType="String" customClassName="Char"/>
+        <attribute name="sNombre" optional="YES" attributeType="String"/>
+        <attribute name="sTelefono" optional="YES" attributeType="String"/>
+        <attribute name="sTratamiento" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="EntidadPaciente" positionX="-63" positionY="-18" width="128" height="134"/>
+    </elements>
 </model>

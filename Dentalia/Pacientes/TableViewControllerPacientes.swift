@@ -16,9 +16,12 @@ class CeldaPaciente:  UITableViewCell{
 
 class TableViewControllerPacientes: UITableViewController {
     
+    let contexto = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var aPacientes:[EntidadPaciente] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        buscarPacientes()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -28,6 +31,14 @@ class TableViewControllerPacientes: UITableViewController {
 
     // MARK: - Table view data source
 
+    func buscarPacientes() {
+        do{
+            self.aPacientes = try contexto.fetch(EntidadPaciente.fetchRequest())
+        } catch {
+            mostrarMensaje("Error en la base de datos", "No se pudieron obtener los pacientes")
+        }
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return aPacientes.count
     }
@@ -35,13 +46,25 @@ class TableViewControllerPacientes: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let celdaMenuPacientes = tableView.dequeueReusableCell(withIdentifier: "TableViewCellPacientes") as! CeldaPaciente
+        
         tableView.backgroundColor = UIColor(red: 36/255, green: 153/255, blue: 255/255, alpha: 1)
+        celdaMenuPacientes.backgroundColor = UIColor(red: 36/255, green: 153/255, blue: 255/255, alpha: 1)
+        
         celdaMenuPacientes.lnNombre.text = aPacientes[indexPath.item].sNombre
         celdaMenuPacientes.lbEdad.text = String(aPacientes[indexPath.item].eEdad)
         celdaMenuPacientes.lbTratamiento.text = aPacientes[indexPath.item].sTratamiento
-        celdaMenuPacientes.backgroundColor = UIColor(red: 36/255, green: 153/255, blue: 255/255, alpha: 1)
         
         return celdaMenuPacientes
+    }
+    func mostrarMensaje(_ titulo: String, _ mensaje: String) {
+        let alert = UIAlertController(title: titulo, message: mensaje, preferredStyle: UIAlertController.Style.alert)
+
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { _ in }))
+            //alert.addAction(UIAlertAction(title: "Sign out", style: UIAlertAction.Style.default, handler: {(_: UIAlertAction!) in
+                                            //Sign out action
+            //}))
+            self.present(alert, animated: true, completion: nil)
+        
     }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

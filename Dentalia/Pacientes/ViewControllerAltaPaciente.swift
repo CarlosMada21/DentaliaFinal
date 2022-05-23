@@ -13,6 +13,9 @@ class ViewControllerAltaPaciente: UIViewController {
     @IBOutlet weak var nombre: UITextField!
     @IBOutlet weak var tratamiento: UITextField!
     
+    let contexto = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var aPacientes:[EntidadPaciente] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,26 +24,24 @@ class ViewControllerAltaPaciente: UIViewController {
     
     @IBAction func guardarPaciente(_ sender: Any) {
         
-        var p1: Paciente = Paciente(edad: Int(edad.text!) ?? 0, nombre: nombre.text!, tratamiento: tratamiento.text!)
+        let epNuevoPaciente = EntidadPaciente(context: self.contexto)
+        epNuevoPaciente.sNombre = self.nombre.text!
+        epNuevoPaciente.eEdad = Int16(self.edad.text!) ?? 0
+        epNuevoPaciente.sTratamiento = self.tratamiento.text!
         
-        if (aPacientes.count == 0){
-        
-            p1.eID = 1
-        
-        } else {
+        do{
+            try self.contexto.save()
+            mostrarMensaje("Guardado exitoso", "El paciente fue registrado con éxito")
+        } catch {
             
-            p1.eID = (aPacientes[(aPacientes.count) - 1].eID) + 1
-            
+            mostrarMensaje("No se pudo guardar", "El paciente no fue registrado")
         }
         
-        aPacientes.append(p1)
-        mostrarGuardado()
         let VCPacientes = storyboard?.instantiateViewController (identifier: "VCAgregarPaciente") as? TableViewControllerPacientes
         tabBarController?.navigationController?.pushViewController(VCPacientes!, animated: true)
     }
-    
-    func mostrarGuardado() {
-        let alert = UIAlertController(title: "Guardado exitoso", message: "El paciente fue registrado", preferredStyle: UIAlertController.Style.alert)
+    func mostrarMensaje(_ titulo: String, _ mensaje: String) {
+        let alert = UIAlertController(title: titulo, message: mensaje, preferredStyle: UIAlertController.Style.alert)
 
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { _ in }))
             //alert.addAction(UIAlertAction(title: "Sign out", style: UIAlertAction.Style.default, handler: {(_: UIAlertAction!) in
@@ -48,7 +49,7 @@ class ViewControllerAltaPaciente: UIViewController {
             //}))
             self.present(alert, animated: true, completion: nil)
         
-        }
+    }
     /*
     // MARK: - Navigation
 

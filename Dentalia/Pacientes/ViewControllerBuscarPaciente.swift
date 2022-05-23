@@ -39,6 +39,17 @@ class ViewControllerBuscarPaciente: UIViewController {
     }
     
     @IBAction func buscarPaciente(_ sender: Any) {
+        
+        if tfNombre.text != nil {
+            
+            tfNombre.text?.lowercased().trimmingCharacters(in: .whitespaces)
+            
+        } else if tfID.text != nil {
+            
+            
+            
+        }
+        
     }
     
 
