@@ -339,7 +339,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="SV6-Z1-3F0">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="57" translatesAutoresizingMaskIntoConstraints="NO" id="SV6-Z1-3F0">
                                 <rect key="frame" x="134" y="275" width="72.5" height="111"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHl-Sf-WyI">
@@ -356,7 +356,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView contentMode="scaleToFill" fixedFrame="YES" axis="vertical" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="hva-Ib-8H7">
+                            <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="hva-Ib-8H7">
                                 <rect key="frame" x="223" y="275" width="78" height="111"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="nombre" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7up-QN-uR3">
@@ -390,11 +390,15 @@
                         <viewLayoutGuide key="safeArea" id="S9U-KO-j0l"/>
                         <color key="backgroundColor" red="0.14117647058823529" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="SV6-Z1-3F0" firstAttribute="top" secondItem="S9U-KO-j0l" secondAttribute="top" constant="187" id="9Ue-Hx-Tx6"/>
+                            <constraint firstItem="hva-Ib-8H7" firstAttribute="leading" secondItem="S9U-KO-j0l" secondAttribute="leading" constant="223" id="Bj7-Du-bIg"/>
                             <constraint firstItem="xXT-Qp-AUv" firstAttribute="top" secondItem="S9U-KO-j0l" secondAttribute="top" constant="35" id="EGh-Aq-fhR"/>
                             <constraint firstItem="aS6-9t-Jcq" firstAttribute="top" secondItem="S9U-KO-j0l" secondAttribute="top" constant="520" id="F0m-Ef-m8D"/>
+                            <constraint firstItem="hva-Ib-8H7" firstAttribute="top" secondItem="S9U-KO-j0l" secondAttribute="top" constant="187" id="IvX-cj-h7E"/>
                             <constraint firstItem="xXd-p6-pG9" firstAttribute="centerX" secondItem="S9U-KO-j0l" secondAttribute="centerX" id="JMX-eG-raX"/>
                             <constraint firstItem="xXT-Qp-AUv" firstAttribute="centerX" secondItem="S9U-KO-j0l" secondAttribute="centerX" id="PeQ-j2-Yht"/>
                             <constraint firstItem="xXd-p6-pG9" firstAttribute="top" secondItem="S9U-KO-j0l" secondAttribute="top" id="SeR-zy-WzT"/>
+                            <constraint firstItem="S9U-KO-j0l" firstAttribute="trailing" secondItem="SV6-Z1-3F0" secondAttribute="trailing" multiplier="2" constant="1" id="ewL-F9-3Vc"/>
                             <constraint firstItem="aS6-9t-Jcq" firstAttribute="centerX" secondItem="S9U-KO-j0l" secondAttribute="centerX" id="mki-Gl-Tc5"/>
                         </constraints>
                     </view>

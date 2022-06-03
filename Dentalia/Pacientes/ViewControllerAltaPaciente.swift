@@ -32,6 +32,9 @@ class ViewControllerAltaPaciente: UIViewController {
         do{
             try self.contexto.save()
             mostrarMensaje("Guardado exitoso", "El paciente fue registrado con éxito")
+            self.nombre.text = ""
+            self.edad.text = ""
+            self.tratamiento.text = ""
         } catch {
             
             mostrarMensaje("No se pudo guardar", "El paciente no fue registrado")
