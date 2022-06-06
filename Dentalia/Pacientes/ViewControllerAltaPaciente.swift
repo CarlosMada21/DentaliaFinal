@@ -45,12 +45,12 @@ class ViewControllerAltaPaciente: UIViewController {
     }
     func mostrarMensaje(_ titulo: String, _ mensaje: String) {
         let alert = UIAlertController(title: titulo, message: mensaje, preferredStyle: UIAlertController.Style.alert)
-
+        
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { _ in }))
             //alert.addAction(UIAlertAction(title: "Sign out", style: UIAlertAction.Style.default, handler: {(_: UIAlertAction!) in
                                             //Sign out action
             //}))
-            self.present(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: nil)
         
     }
     /*

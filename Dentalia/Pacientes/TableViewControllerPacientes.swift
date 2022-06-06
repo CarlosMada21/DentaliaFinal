@@ -17,9 +17,6 @@ class CeldaPaciente:  UITableViewCell{
 
 class TableViewControllerPacientes: UITableViewController {
     
-    let contexto = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    var aPacientes:[EntidadPaciente] = []
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         buscarPacientes()
@@ -34,7 +31,7 @@ class TableViewControllerPacientes: UITableViewController {
 
     func buscarPacientes() {
         do{
-            self.aPacientes = try contexto.fetch(EntidadPaciente.fetchRequest())
+            aPacientes = try contexto.fetch(EntidadPaciente.fetchRequest())
         } catch {
             mostrarMensaje("Error en la base de datos", "No se pudieron obtener los pacientes")
         }

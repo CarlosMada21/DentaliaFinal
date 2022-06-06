@@ -18,6 +18,9 @@ class ViewControllerActualizarPaciente: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.viewControllers.forEach({ vc in
+            print(vc.self)
+        })
       //  buscarPacientes()
         //cargarPacienteBuscado()
         // Do any additional setup after loading the view.
@@ -26,6 +29,66 @@ class ViewControllerActualizarPaciente: UIViewController {
         self.tfNombre.text = self.pPacienteActualizar?.sNombre
     }
     
+    @IBAction func actualizarPaciente(_ sender: Any) {
+        mensajeConfirmacionActualizar("Actualizar Paciente", "Se actualizarán los datos")
+    }
+    @IBAction func borrarPaciente(_ sender: Any) {
+        
+        mensajeConfirmacionBorrar("Borrar paciente", "¿Segura que quiere borrar al paciente?")
+    }
+    func mensajeConfirmacionBorrar(_ titulo: String, _ mensaje: String) {
+        let alert = UIAlertController(title: titulo, message: mensaje, preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancelar", style: UIAlertAction.Style.default, handler: { _ in }))
+        alert.addAction(UIAlertAction(title: "Confirmar", style: UIAlertAction.Style.default, handler: {(_: UIAlertAction!) in
+                contexto.delete(self.pPacienteActualizar!)
+                do{
+                    try contexto.save()
+                    let VCAltaPaciente = self.navigationController?.viewControllers[1]
+                    self.navigationController?.popToViewController(VCAltaPaciente!, animated: true)
+                } catch {
+                    self.mostrarMensajeAlerta("Error", "No se borró el paciente")
+                }//Accion para confirmar
+                //let VCAltaPaciente = self.navigationController?.viewControllers[0]
+                
+            }))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    
+    func mensajeConfirmacionActualizar(_ titulo: String, _ mensaje: String) {
+        let alert = UIAlertController(title: titulo, message: mensaje, preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "Cancelar", style: UIAlertAction.Style.default, handler: { _ in }))
+        alert.addAction(UIAlertAction(title: "Confirmar", style: UIAlertAction.Style.default, handler: {(_: UIAlertAction!) in
+                self.pPacienteActualizar?.sNombre = self.tfNombre.text!
+                self.pPacienteActualizar?.sTratamiento = self.tratamiento.text!
+                self.pPacienteActualizar?.eEdad = Int16(self.edad.text!)!
+                do{
+                    try contexto.save()
+                    let VCAltaPaciente = self.navigationController?.viewControllers[1]
+                    self.navigationController?.popToViewController(VCAltaPaciente!, animated: true)
+                } catch {
+                    self.mostrarMensajeAlerta("Error", "No se actualizaron los datos")
+                }//Accion para confirmar
+                //let VCAltaPaciente = self.navigationController?.viewControllers[0]
+                
+            }))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
+    
+    
+    func mostrarMensajeAlerta(_ titulo: String, _ mensaje: String) {
+        let alert = UIAlertController(title: titulo, message: mensaje, preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { _ in }))
+            //alert.addAction(UIAlertAction(title: "Sign out", style: UIAlertAction.Style.default, handler: {(_: UIAlertAction!) in
+                                            //Sign out action
+            //}))
+        self.present(alert, animated: true, completion: nil)
+    }
     /*func cargarPacienteBuscado(){
         aPacientes[indexPath.item].sNombre
     }

@@ -6,7 +6,8 @@
 //
 
 import UIKit
-
+let contexto = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+var aPacientes:[EntidadPaciente] = []
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var TableViewPrincipal: UITableView!
