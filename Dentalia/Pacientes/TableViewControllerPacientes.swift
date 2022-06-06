@@ -12,6 +12,7 @@ class CeldaPaciente:  UITableViewCell{
     @IBOutlet weak var lnNombre: UILabel!
     @IBOutlet weak var lbEdad: UILabel!
     @IBOutlet weak var lbTratamiento: UILabel!
+
 }
 
 class TableViewControllerPacientes: UITableViewController {
@@ -66,6 +67,15 @@ class TableViewControllerPacientes: UITableViewController {
             self.present(alert, animated: true, completion: nil)
         
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //if indexPath.row <= 0 || indexPath.row > 0 {
+        let VCActualizar = storyboard?.instantiateViewController (identifier: "VCActualizarPaciente") as? ViewControllerActualizarPaciente
+        VCActualizar?.pPacienteActualizar = aPacientes[indexPath.row]
+        navigationController?.pushViewController(VCActualizar!, animated: true)
+        
+        //}
+        
+    }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
@@ -111,14 +121,18 @@ class TableViewControllerPacientes: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        /*if segue.identifier == "ActualizarPaciente"{
+            let VCActualizar = storyboard?.instantiateViewController (identifier: "VCActualizarPaciente") as? ViewControllerActualizarPaciente
+            navigationController?.pushViewController(VCActualizar!, animated: true)
+        }*/
     }
-    */
+
     
 }
