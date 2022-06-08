@@ -16,7 +16,8 @@ class CeldaPaciente:  UITableViewCell{
 }
 
 class TableViewControllerPacientes: UITableViewController {
-    
+    let contexto = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var aPacientes:[EntidadPaciente] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         buscarPacientes()
@@ -31,14 +32,14 @@ class TableViewControllerPacientes: UITableViewController {
 
     func buscarPacientes() {
         do{
-            aPacientes = try contexto.fetch(EntidadPaciente.fetchRequest())
+            self.aPacientes = try contexto.fetch(EntidadPaciente.fetchRequest())
         } catch {
             mostrarMensaje("Error en la base de datos", "No se pudieron obtener los pacientes")
         }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return aPacientes.count
+        return self.aPacientes.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -48,9 +49,9 @@ class TableViewControllerPacientes: UITableViewController {
         tableView.backgroundColor = UIColor(red: 36/255, green: 153/255, blue: 255/255, alpha: 1)
         celdaMenuPacientes.backgroundColor = UIColor(red: 36/255, green: 153/255, blue: 255/255, alpha: 1)
         
-        celdaMenuPacientes.lnNombre.text = aPacientes[indexPath.item].sNombre
-        celdaMenuPacientes.lbEdad.text = String(aPacientes[indexPath.item].eEdad)
-        celdaMenuPacientes.lbTratamiento.text = aPacientes[indexPath.item].sTratamiento
+        celdaMenuPacientes.lnNombre.text = self.aPacientes[indexPath.item].sNombre
+        celdaMenuPacientes.lbEdad.text = String(self.aPacientes[indexPath.item].eEdad)
+        celdaMenuPacientes.lbTratamiento.text = self.aPacientes[indexPath.item].sTratamiento
         
         return celdaMenuPacientes
     }
@@ -67,7 +68,7 @@ class TableViewControllerPacientes: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //if indexPath.row <= 0 || indexPath.row > 0 {
         let VCActualizar = storyboard?.instantiateViewController (identifier: "VCActualizarPaciente") as? ViewControllerActualizarPaciente
-        VCActualizar?.pPacienteActualizar = aPacientes[indexPath.row]
+        VCActualizar?.pPacienteActualizar = self.aPacientes[indexPath.row]
         navigationController?.pushViewController(VCActualizar!, animated: true)
         
         //}
