@@ -44,7 +44,7 @@ class ViewControllerActualizarPaciente: UIViewController {
                 contexto.delete(self.pPacienteActualizar!)
                 do{
                     try contexto.save()
-                    let VCAltaPaciente = self.navigationController?.viewControllers[1]
+                    let VCAltaPaciente = self.navigationController?.viewControllers[2]
                     self.navigationController?.popToViewController(VCAltaPaciente!, animated: true)
                 } catch {
                     self.mostrarMensajeAlerta("Error", "No se borró el paciente")
@@ -67,7 +67,7 @@ class ViewControllerActualizarPaciente: UIViewController {
                 self.pPacienteActualizar?.eEdad = Int16(self.edad.text!)!
                 do{
                     try contexto.save()
-                    let VCAltaPaciente = self.navigationController?.viewControllers[1]
+                    let VCAltaPaciente = self.navigationController?.viewControllers[2]
                     self.navigationController?.popToViewController(VCAltaPaciente!, animated: true)
                 } catch {
                     self.mostrarMensajeAlerta("Error", "No se actualizaron los datos")

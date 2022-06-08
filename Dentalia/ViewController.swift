@@ -11,13 +11,14 @@ var aPacientes:[EntidadPaciente] = []
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var TableViewPrincipal: UITableView!
-    let opcionesMenuPrincipal: [String] = ["Agenda", "Pacientes", "Tratamiento", "Historia Clínica", "Presupuesto", "Recordatorios"]
-    let imagenesMenuPrincipal: [String] = ["calendar", "person.circle", "square.and.pencil", "waveform.path.ecg.rectangle", "dollarsign.circle.fill", "note"]
+    let opcionesMenuPrincipal: [String] = ["Agenda", "Pacientes", "Tratamiento"]//, "Historia Clínica", "Presupuesto", "Recordatorios"]
+    let imagenesMenuPrincipal: [String] = ["calendar", "person.circle", "square.and.pencil"]//, "waveform.path.ecg.rectangle", "dollarsign.circle.fill", "note"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         TableViewPrincipal.delegate = self
         TableViewPrincipal.dataSource = self
+        TableViewPrincipal.backgroundColor = UIColor(red: 36/255, green: 153/255, blue: 255/255, alpha: 1)
         // Do any additional setup after loading the view.
     }
 

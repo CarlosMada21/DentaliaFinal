@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L0g-Om-AC7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L0g-Om-AC7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -224,7 +224,7 @@
         <scene sceneID="NvS-Bl-aJb">
             <objects>
                 <viewController storyboardIdentifier="VCAgregarPaciente" id="RPu-Qd-r93" customClass="TableViewControllerPacientes" customModule="Dentalia" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="2" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="izr-d8-zle">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="2" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="izr-d8-zle">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -242,19 +242,7 @@
                                             <rect key="frame" x="10" y="0.0" width="103.5" height="95"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r90-Ng-iuB">
-                                                    <rect key="frame" x="0.0" y="0.0" width="103.5" height="31.5"/>
-                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2Y-If-RyR">
-                                                    <rect key="frame" x="0.0" y="31.5" width="103.5" height="32"/>
-                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tratamiento:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ch2-9k-eOa">
-                                                    <rect key="frame" x="0.0" y="63.5" width="103.5" height="31.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="103.5" height="95"/>
                                                     <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -266,19 +254,7 @@
                                             <rect key="frame" x="135" y="0.0" width="269" height="95"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grx-LC-BWL">
-                                                    <rect key="frame" x="0.0" y="0.0" width="269" height="31.5"/>
-                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="edad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KbN-q1-O90">
-                                                    <rect key="frame" x="0.0" y="31.5" width="269" height="32"/>
-                                                    <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tratamiento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iV7-oj-G3s">
-                                                    <rect key="frame" x="0.0" y="63.5" width="269" height="31.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="269" height="95"/>
                                                     <fontDescription key="fontDescription" name="KohinoorBangla-Light" family="Kohinoor Bangla" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -300,8 +276,6 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.14117647058823529" green="0.59999999999999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
-                                    <outlet property="lbEdad" destination="KbN-q1-O90" id="UnM-Vv-75e"/>
-                                    <outlet property="lbTratamiento" destination="iV7-oj-G3s" id="4yN-pZ-xd6"/>
                                     <outlet property="lnNombre" destination="Grx-LC-BWL" id="ewf-2Y-Son"/>
                                 </connections>
                             </tableViewCell>

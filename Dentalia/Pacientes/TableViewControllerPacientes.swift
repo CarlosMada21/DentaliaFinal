@@ -10,8 +10,6 @@ import UIKit
 class CeldaPaciente:  UITableViewCell{
     
     @IBOutlet weak var lnNombre: UILabel!
-    @IBOutlet weak var lbEdad: UILabel!
-    @IBOutlet weak var lbTratamiento: UILabel!
 
 }
 
@@ -27,7 +25,12 @@ class TableViewControllerPacientes: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        buscarPacientes()
+        self.tableView.reloadData()
+    }
+    
     // MARK: - Table view data source
 
     func buscarPacientes() {
@@ -50,8 +53,7 @@ class TableViewControllerPacientes: UITableViewController {
         celdaMenuPacientes.backgroundColor = UIColor(red: 36/255, green: 153/255, blue: 255/255, alpha: 1)
         
         celdaMenuPacientes.lnNombre.text = self.aPacientes[indexPath.item].sNombre
-        celdaMenuPacientes.lbEdad.text = String(self.aPacientes[indexPath.item].eEdad)
-        celdaMenuPacientes.lbTratamiento.text = self.aPacientes[indexPath.item].sTratamiento
+        
         
         return celdaMenuPacientes
     }
