@@ -14,8 +14,7 @@ class CeldaPaciente:  UITableViewCell{
 }
 
 class TableViewControllerPacientes: UITableViewController {
-    let contexto = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    var aPacientes:[EntidadPaciente] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         buscarPacientes()
@@ -35,14 +34,14 @@ class TableViewControllerPacientes: UITableViewController {
 
     func buscarPacientes() {
         do{
-            self.aPacientes = try contexto.fetch(EntidadPaciente.fetchRequest())
+            aPacientes = try contexto.fetch(EntidadPaciente.fetchRequest())
         } catch {
             mostrarMensaje("Error en la base de datos", "No se pudieron obtener los pacientes")
         }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.aPacientes.count
+        return aPacientes.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,7 +51,7 @@ class TableViewControllerPacientes: UITableViewController {
         tableView.backgroundColor = UIColor(red: 36/255, green: 153/255, blue: 255/255, alpha: 1)
         celdaMenuPacientes.backgroundColor = UIColor(red: 36/255, green: 153/255, blue: 255/255, alpha: 1)
         
-        celdaMenuPacientes.lnNombre.text = self.aPacientes[indexPath.item].sNombre
+        celdaMenuPacientes.lnNombre.text = aPacientes[indexPath.item].sNombre
         
         
         return celdaMenuPacientes
@@ -70,11 +69,30 @@ class TableViewControllerPacientes: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //if indexPath.row <= 0 || indexPath.row > 0 {
         let VCActualizar = storyboard?.instantiateViewController (identifier: "VCActualizarPaciente") as? ViewControllerActualizarPaciente
-        VCActualizar?.pPacienteActualizar = self.aPacientes[indexPath.row]
+        VCActualizar?.pPacienteActualizar = aPacientes[indexPath.row]
         navigationController?.pushViewController(VCActualizar!, animated: true)
         
         //}
         
+    }
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteAction = UIContextualAction(style: .destructive, title: "Borrar", handler: {(_, _, completionHandle) in
+
+            contexto.delete(aPacientes[indexPath.row])
+            do{
+                try contexto.save()
+                let VCAltaPaciente = self.navigationController?.viewControllers[2]
+                self.navigationController?.popToViewController(VCAltaPaciente!, animated: true)
+            } catch {
+                self.mostrarMensajeAlerta("Error", "No se borró el paciente")
+            }
+
+        })
+        deleteAction.image = UIImage(systemName: "trash")
+        deleteAction.backgroundColor = .systemRed
+        buscarPacientes()
+        self.tableView.reloadData()
+        return UISwipeActionsConfiguration(actions: [deleteAction])
     }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -133,6 +151,14 @@ class TableViewControllerPacientes: UITableViewController {
             navigationController?.pushViewController(VCActualizar!, animated: true)
         }*/
     }
-
+    func mostrarMensajeAlerta(_ titulo: String, _ mensaje: String) {
+        let alert = UIAlertController(title: titulo, message: mensaje, preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { _ in }))
+            //alert.addAction(UIAlertAction(title: "Sign out", style: UIAlertAction.Style.default, handler: {(_: UIAlertAction!) in
+                                            //Sign out action
+            //}))
+        self.present(alert, animated: true, completion: nil)
+    }
     
 }
