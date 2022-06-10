@@ -9,7 +9,7 @@
         <attribute name="sTelefono" optional="YES" attributeType="String"/>
         <attribute name="sTratamiento" optional="YES" attributeType="String"/>
     </entity>
-    <entity name="EntidadRecordatorio" representedClassName="EntidadRecordatorio" syncable="YES" codeGenerationType="class">
+    <entity name="EntidadRecordatorio" representedClassName="EntidadRecordatorio" syncable="YES">
         <attribute name="sFecha" optional="YES" attributeType="String"/>
         <attribute name="sNota" optional="YES" attributeType="String"/>
     </entity>

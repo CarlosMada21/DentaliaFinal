@@ -7,30 +7,100 @@
 
 import UIKit
 
+class CeldaRecordatorio: UITableViewCell {
+    
+    
+    @IBOutlet weak var lbRecordatorio: UILabel!
+    
+}
+
 class TableViewControllerRecordatorio: UITableViewController {
 
+    let contextoRecordatorio = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var aRecordatorios:[EntidadRecordatorio] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        buscarRecordatorios()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    override func viewDidAppear(_ animated: Bool) {
+        self.buscarRecordatorios()
+        self.tableView.reloadData()
+    }
+    func buscarRecordatorios() {
+        do{
+            aRecordatorios = try self.contextoRecordatorio.fetch(EntidadRecordatorio.fetchRequest())
+        } catch {
+            mostrarMensaje("Error en la base de datos", "No se pudieron obtener los recordatorios")
+        }
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 0
     }
-
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let celdaRecordatorio = tableView.dequeueReusableCell(withIdentifier: "TableViewCellRecordatorio") as! CeldaRecordatorio
+        
+        tableView.backgroundColor = UIColor.green
+        celdaRecordatorio.backgroundColor = UIColor.green
+        
+        celdaRecordatorio.lbRecordatorio.text = aRecordatorios[indexPath.item].sNota
+        
+        
+        return celdaRecordatorio
+    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return aRecordatorios.count
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteAction = UIContextualAction(style: .destructive, title: "Borrar", handler: {(_, _, completionHandle) in
 
+            self.contextoRecordatorio.delete(aPacientes[indexPath.row])
+            do{
+                try self.contextoRecordatorio.save()
+                self.buscarRecordatorios()
+                self.tableView.reloadData()
+            } catch {
+                self.mostrarMensajeAlerta("Error", "No se borró el paciente")
+            }
+
+        })
+        deleteAction.image = UIImage(systemName: "trash")
+        deleteAction.backgroundColor = .systemRed
+        
+        return UISwipeActionsConfiguration(actions: [deleteAction])
+    }
+    func mostrarMensaje(_ titulo: String, _ mensaje: String) {
+        let alert = UIAlertController(title: titulo, message: mensaje, preferredStyle: UIAlertController.Style.alert)
+
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { _ in }))
+            //alert.addAction(UIAlertAction(title: "Sign out", style: UIAlertAction.Style.default, handler: {(_: UIAlertAction!) in
+                                            //Sign out action
+            //}))
+            self.present(alert, animated: true, completion: nil)
+        
+    }
+    func mostrarMensajeAlerta(_ titulo: String, _ mensaje: String) {
+        let alert = UIAlertController(title: titulo, message: mensaje, preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { _ in }))
+            //alert.addAction(UIAlertAction(title: "Sign out", style: UIAlertAction.Style.default, handler: {(_: UIAlertAction!) in
+                                            //Sign out action
+            //}))
+        self.present(alert, animated: true, completion: nil)
+    }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

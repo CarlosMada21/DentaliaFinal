@@ -350,10 +350,10 @@
             </objects>
             <point key="canvasLocation" x="1343" y="-479"/>
         </scene>
-        <!--View Controller-->
+        <!--recordatorio-->
         <scene sceneID="u0Z-gz-TRG">
             <objects>
-                <viewController id="p1I-Ar-chj" sceneMemberID="viewController">
+                <viewController id="p1I-Ar-chj" customClass="ViewControllerRecordatorio" customModule="Dentalia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G9k-tQ-xKw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -404,14 +404,21 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3r-dx-EWv">
-                                <rect key="frame" x="169" y="629" width="76" height="31"/>
+                                <rect key="frame" x="155.5" y="629" width="103.5" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Agregar"/>
+                                <connections>
+                                    <action selector="agregarRecordatorio:" destination="p1I-Ar-chj" eventType="touchUpInside" id="wFh-FF-hBP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50A-YT-uNV">
                                 <rect key="frame" x="178" y="692" width="60" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Listar"/>
+                                <connections>
+                                    <action selector="listarRecordatorios:" destination="p1I-Ar-chj" eventType="touchUpInside" id="cQn-Qt-EwK"/>
+                                    <segue destination="Yyj-xK-2qa" kind="show" id="Cop-C2-7VV"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zeT-bb-wsT">
                                 <rect key="frame" x="208" y="336" width="97" height="34"/>
@@ -454,36 +461,43 @@
                             <constraint firstItem="0Zc-bW-Ww6" firstAttribute="height" secondItem="G9k-tQ-xKw" secondAttribute="height" multiplier="0.0267857" id="ftS-x3-gfQ"/>
                             <constraint firstItem="pGW-AF-f1Y" firstAttribute="height" secondItem="G9k-tQ-xKw" secondAttribute="height" multiplier="0.0256696" id="gji-ab-TPu"/>
                             <constraint firstItem="vrE-He-xgl" firstAttribute="trailing" secondItem="zeT-bb-wsT" secondAttribute="trailing" constant="109" id="hFh-oQ-eOy"/>
-                            <constraint firstItem="50A-YT-uNV" firstAttribute="width" secondItem="G9k-tQ-xKw" secondAttribute="width" multiplier="0.144928" id="iey-AX-Thf"/>
+                            <constraint firstItem="50A-YT-uNV" firstAttribute="width" secondItem="G9k-tQ-xKw" secondAttribute="width" multiplier="0.2" id="iey-AX-Thf"/>
                             <constraint firstItem="n3r-dx-EWv" firstAttribute="height" secondItem="G9k-tQ-xKw" secondAttribute="height" multiplier="0.0345982" id="m0Q-Xo-9g3"/>
                             <constraint firstItem="8lA-5t-NWh" firstAttribute="width" secondItem="G9k-tQ-xKw" secondAttribute="width" multiplier="0.2343" id="oWB-42-cRv"/>
-                            <constraint firstItem="n3r-dx-EWv" firstAttribute="width" secondItem="G9k-tQ-xKw" secondAttribute="width" multiplier="0.183575" id="pXb-qn-ePV"/>
+                            <constraint firstItem="n3r-dx-EWv" firstAttribute="width" secondItem="G9k-tQ-xKw" secondAttribute="width" multiplier="0.25" id="pXb-qn-ePV"/>
                             <constraint firstItem="VrH-SE-fTT" firstAttribute="top" secondItem="vrE-He-xgl" secondAttribute="top" constant="364" id="q7M-XJ-LEW"/>
                             <constraint firstItem="BuV-Me-dQP" firstAttribute="height" secondItem="G9k-tQ-xKw" secondAttribute="height" multiplier="0.0301339" id="qZW-6z-HwE"/>
                             <constraint firstItem="50A-YT-uNV" firstAttribute="height" secondItem="G9k-tQ-xKw" secondAttribute="height" multiplier="0.0345982" id="sQ4-4J-meK"/>
                             <constraint firstItem="zeT-bb-wsT" firstAttribute="top" secondItem="vrE-He-xgl" secondAttribute="top" constant="292" id="sbW-yt-aqV"/>
                             <constraint firstItem="td8-k8-fsM" firstAttribute="height" secondItem="G9k-tQ-xKw" secondAttribute="height" multiplier="0.0379464" id="uYc-oY-Tnb"/>
-                            <constraint firstItem="a8Z-Mq-o2R" firstAttribute="leading" secondItem="vrE-He-xgl" secondAttribute="leading" constant="142" id="vFo-Le-HCb"/>
+                            <constraint firstItem="a8Z-Mq-o2R" firstAttribute="leading" secondItem="vrE-He-xgl" secondAttribute="leading" constant="1" id="vFo-Le-HCb"/>
                             <constraint firstItem="a8Z-Mq-o2R" firstAttribute="top" secondItem="vrE-He-xgl" secondAttribute="top" constant="101" id="vRo-zu-qSe"/>
                             <constraint firstItem="VrH-SE-fTT" firstAttribute="leading" secondItem="vrE-He-xgl" secondAttribute="leading" constant="140" id="xIn-R6-iW6"/>
                             <constraint firstItem="8lA-5t-NWh" firstAttribute="top" secondItem="vrE-He-xgl" secondAttribute="top" constant="232" id="zYM-ax-DqM"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="recordatorio" image="note" catalog="system" id="FmG-67-Daz"/>
+                    <connections>
+                        <outlet property="lbAnio" destination="td8-k8-fsM" id="JCj-eD-kRh"/>
+                        <outlet property="lbDia" destination="8lA-5t-NWh" id="91L-mQ-BFm"/>
+                        <outlet property="lbMes" destination="zeT-bb-wsT" id="zyI-bR-Rcq"/>
+                        <outlet property="lbRecordatorio" destination="a8Z-Mq-o2R" id="UTB-cA-aYq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ODF-gT-I0e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="463.768115942029" y="-1230.1339285714284"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Table View Controller Recordatorio-->
         <scene sceneID="FwK-a0-3mm">
             <objects>
-                <tableViewController id="Yyj-xK-2qa" sceneMemberID="viewController">
+                <tableViewController id="Yyj-xK-2qa" customClass="TableViewControllerRecordatorio" customModule="Dentalia" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="aoM-c2-cYO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="72" id="f3z-jJ-nlV">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCellRecordatorio" rowHeight="72" id="f3z-jJ-nlV" customClass="CeldaRecordatorio" customModule="Dentalia" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f3z-jJ-nlV" id="wzb-2T-vGT">
@@ -504,6 +518,9 @@
                                         <constraint firstItem="1wn-Mk-2DK" firstAttribute="centerX" secondItem="wzb-2T-vGT" secondAttribute="centerX" id="y5M-9v-kD8"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lbRecordatorio" destination="1wn-Mk-2DK" id="3CP-Vb-666"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -511,6 +528,7 @@
                             <outlet property="delegate" destination="Yyj-xK-2qa" id="GWz-Lm-1Uc"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="hob-rY-KPk"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="apd-yj-AdT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -528,6 +546,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="SNM-ih-Lru" kind="relationship" relationship="viewControllers" id="Css-0r-650"/>
+                        <segue destination="p1I-Ar-chj" kind="relationship" relationship="viewControllers" id="Bmh-kz-WBa"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mCh-BA-F5t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -975,6 +994,7 @@
         <image name="arrowshape.turn.up.right.circle.fill" catalog="system" width="128" height="121"/>
         <image name="brain" catalog="system" width="128" height="104"/>
         <image name="face.smiling" catalog="system" width="128" height="121"/>
+        <image name="note" catalog="system" width="128" height="106"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="person.fill.badge.plus" catalog="system" width="128" height="124"/>
         <systemColor name="systemBackgroundColor">
