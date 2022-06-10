@@ -220,7 +220,7 @@
             </objects>
             <point key="canvasLocation" x="-607" y="750"/>
         </scene>
-        <!--View Controller Chistes Chuck-->
+        <!--chiste-->
         <scene sceneID="ruJ-Ao-l4V">
             <objects>
                 <viewController storyboardIdentifier="VCChistesAPI" id="Gxk-qx-Whe" customClass="ViewControllerChistesChuck" customModule="Dentalia" customModuleProvider="target" sceneMemberID="viewController">
@@ -248,7 +248,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lc-XE-13Z">
-                                <rect key="frame" x="173.5" y="779" width="67" height="31"/>
+                                <rect key="frame" x="173.5" y="730" width="67" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" image="arrow.clockwise" catalog="system"/>
                                 <connections>
@@ -273,13 +273,14 @@
                             <constraint firstItem="s3b-v7-eeB" firstAttribute="top" secondItem="4d2-Jd-UtB" secondAttribute="top" constant="25" id="ycg-yX-qPq"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="chiste" image="face.smiling" catalog="system" id="WD1-R0-P5V"/>
                     <connections>
                         <outlet property="lbChiste" destination="z1b-8a-F9y" id="Ujo-7f-hqQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RiY-0X-rTS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="422" y="345"/>
+            <point key="canvasLocation" x="1249" y="250"/>
         </scene>
         <!--Mostrar-->
         <scene sceneID="NvS-Bl-aJb">
@@ -677,11 +678,90 @@
             </objects>
             <point key="canvasLocation" x="2361" y="-479"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="R3A-uO-Lrb">
+            <objects>
+                <tabBarController storyboardIdentifier="TBCApis" id="Mpr-v9-QBN" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iCe-KL-NyB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Gxk-qx-Whe" kind="relationship" relationship="viewControllers" id="L96-0T-ezf"/>
+                        <segue destination="nKW-3F-4Wk" kind="relationship" relationship="viewControllers" id="Jua-Sw-j9r"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1bU-FY-emE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387" y="436"/>
+        </scene>
+        <!--curioso-->
+        <scene sceneID="x4A-dk-Php">
+            <objects>
+                <viewController storyboardIdentifier="VCCuriosoAPI" id="nKW-3F-4Wk" customClass="ViewControllerMateAPI" customModule="Dentalia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vM5-nZ-csR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbA-d6-Nf2">
+                                <rect key="frame" x="127" y="69" width="160" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Datos Curiosos">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="24" name="Times-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XVn-0X-VNZ">
+                                <rect key="frame" x="45" y="160" width="318" height="457"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88I-Pm-nKm">
+                                <rect key="frame" x="173.5" y="730" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrow.clockwise" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kta-l3-XCW"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="XVn-0X-VNZ" firstAttribute="top" secondItem="Kta-l3-XCW" secondAttribute="top" constant="116" id="2aQ-rY-ZZA"/>
+                            <constraint firstItem="BbA-d6-Nf2" firstAttribute="centerX" secondItem="Kta-l3-XCW" secondAttribute="centerX" id="4bR-Qk-HXp"/>
+                            <constraint firstItem="88I-Pm-nKm" firstAttribute="centerX" secondItem="Kta-l3-XCW" secondAttribute="centerX" id="HGp-3P-A02"/>
+                            <constraint firstItem="BbA-d6-Nf2" firstAttribute="height" secondItem="vM5-nZ-csR" secondAttribute="height" multiplier="0.0301339" id="PSx-EK-ndi"/>
+                            <constraint firstItem="Kta-l3-XCW" firstAttribute="bottom" secondItem="88I-Pm-nKm" secondAttribute="bottom" constant="52" id="VIQ-CM-Dgn"/>
+                            <constraint firstItem="BbA-d6-Nf2" firstAttribute="width" secondItem="vM5-nZ-csR" secondAttribute="width" multiplier="0.386473" id="WRu-cN-c2q"/>
+                            <constraint firstItem="XVn-0X-VNZ" firstAttribute="height" secondItem="vM5-nZ-csR" secondAttribute="height" multiplier="0.510045" id="YK2-id-sBG"/>
+                            <constraint firstItem="XVn-0X-VNZ" firstAttribute="centerX" secondItem="Kta-l3-XCW" secondAttribute="centerX" id="mWL-QT-xef"/>
+                            <constraint firstItem="88I-Pm-nKm" firstAttribute="width" secondItem="vM5-nZ-csR" secondAttribute="width" multiplier="0.161836" id="naf-lt-jy5"/>
+                            <constraint firstItem="XVn-0X-VNZ" firstAttribute="width" secondItem="vM5-nZ-csR" secondAttribute="width" multiplier="0.768116" id="pdQ-c0-bap"/>
+                            <constraint firstItem="BbA-d6-Nf2" firstAttribute="top" secondItem="Kta-l3-XCW" secondAttribute="top" constant="25" id="x3C-z2-sY6"/>
+                            <constraint firstItem="88I-Pm-nKm" firstAttribute="height" secondItem="vM5-nZ-csR" secondAttribute="height" multiplier="0.0345982" id="xRq-gy-eYb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="curioso" image="brain" catalog="system" id="eCO-be-4ey"/>
+                    <connections>
+                        <outlet property="lbCurioso" destination="XVn-0X-VNZ" id="Y0X-xf-rTa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JkA-P5-4La" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1249" y="930"/>
+        </scene>
     </scenes>
     <resources>
         <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
         <image name="arrowshape.turn.up.left.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrowshape.turn.up.right.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="brain" catalog="system" width="128" height="104"/>
+        <image name="face.smiling" catalog="system" width="128" height="121"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="person.fill.badge.plus" catalog="system" width="128" height="124"/>

@@ -51,8 +51,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             case 1: let TBCPacientes = storyboard?.instantiateViewController(withIdentifier: "TBCPacientes")//UITableViewController
                 navigationController?.pushViewController(TBCPacientes!, animated: true)
                 break
-            case 2: let VCChistes = storyboard?.instantiateViewController (identifier: "VCChistesAPI") as? ViewControllerChistesChuck
-                navigationController?.pushViewController(VCChistes!, animated: true)
+            case 2: let TBCApis = storyboard?.instantiateViewController(withIdentifier: "TBCApis")//UITableViewController
+                navigationController?.pushViewController(TBCApis!, animated: true)
                 break
             case 3: let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerCalendario
                 navigationController?.pushViewController(VCPacientes!, animated: true)

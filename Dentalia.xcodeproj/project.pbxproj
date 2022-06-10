@@ -13,6 +13,7 @@
 		A93CA73E283B4C23001F6B90 /* EntidadPaciente+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93CA73C283B4C23001F6B90 /* EntidadPaciente+CoreDataClass.swift */; };
 		A93CA73F283B4C23001F6B90 /* EntidadPaciente+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93CA73D283B4C23001F6B90 /* EntidadPaciente+CoreDataProperties.swift */; };
 		A95D7BD328526F6B00153081 /* ViewControllerChistesChuck.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95D7BD228526F6B00153081 /* ViewControllerChistesChuck.swift */; };
+		A95D7BD82852CFA000153081 /* ViewControllerMateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A95D7BD72852CFA000153081 /* ViewControllerMateAPI.swift */; };
 		A962C2A927F5CEC500F74707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2A827F5CEC500F74707 /* AppDelegate.swift */; };
 		A962C2AB27F5CEC500F74707 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2AA27F5CEC500F74707 /* SceneDelegate.swift */; };
 		A962C2AD27F5CEC500F74707 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2AC27F5CEC500F74707 /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 		A93CA73C283B4C23001F6B90 /* EntidadPaciente+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntidadPaciente+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A93CA73D283B4C23001F6B90 /* EntidadPaciente+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntidadPaciente+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A95D7BD228526F6B00153081 /* ViewControllerChistesChuck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerChistesChuck.swift; sourceTree = "<group>"; };
+		A95D7BD72852CFA000153081 /* ViewControllerMateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMateAPI.swift; sourceTree = "<group>"; };
 		A962C2A527F5CEC500F74707 /* Dentalia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dentalia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A962C2A827F5CEC500F74707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A962C2AA27F5CEC500F74707 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,15 @@
 			path = Calendario;
 			sourceTree = "<group>";
 		};
+		A95D7BD62852C8FF00153081 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				A95D7BD228526F6B00153081 /* ViewControllerChistesChuck.swift */,
+				A95D7BD72852CFA000153081 /* ViewControllerMateAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
 		A962C29C27F5CEC500F74707 = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +157,7 @@
 		A962C2A727F5CEC500F74707 /* Dentalia */ = {
 			isa = PBXGroup;
 			children = (
+				A95D7BD62852C8FF00153081 /* APIs */,
 				A962C2A827F5CEC500F74707 /* AppDelegate.swift */,
 				A962C2AA27F5CEC500F74707 /* SceneDelegate.swift */,
 				A962C2AC27F5CEC500F74707 /* ViewController.swift */,
@@ -182,7 +194,6 @@
 				A984F5FF27FEFDC8001EE510 /* Agenda.storyboard */,
 				A962C2B627F5CEC800F74707 /* LaunchScreen.storyboard */,
 				A962C2AE27F5CEC500F74707 /* Main.storyboard */,
-				A95D7BD228526F6B00153081 /* ViewControllerChistesChuck.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -341,6 +352,7 @@
 				A962C2AB27F5CEC500F74707 /* SceneDelegate.swift in Sources */,
 				A95D7BD328526F6B00153081 /* ViewControllerChistesChuck.swift in Sources */,
 				A99FA67C280DE08E00583635 /* Calendario.swift in Sources */,
+				A95D7BD82852CFA000153081 /* ViewControllerMateAPI.swift in Sources */,
 				A93CA73E283B4C23001F6B90 /* EntidadPaciente+CoreDataClass.swift in Sources */,
 				A962C2B327F5CEC500F74707 /* Dentalia.xcdatamodeld in Sources */,
 				A99FA678280D356A00583635 /* CalendarioCell.swift in Sources */,
