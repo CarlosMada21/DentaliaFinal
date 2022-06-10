@@ -13,10 +13,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let winScene = (scene as? UIWindowScene) else { return }
+        self.window = UIWindow(windowScene: winScene)
+        
+        var controller: UIViewController!
+        if UserDefaults.standard.hasOnboarded{
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            controller = storyboard.instantiateViewController(withIdentifier: "NCInicio") as! UINavigationController
+        } else {
+            controller = ViewControllerOnboarding.instantiate()
+        }
+        window?.rootViewController = controller
+        window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -53,3 +61,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 }
 
+extension UserDefaults{
+    private enum UserDefaultsKeys: String{
+        case hasOnborded
+    }
+    
+    var hasOnboarded: Bool{
+        get{
+            bool(forKey: UserDefaultsKeys.hasOnborded.rawValue)
+        }
+        set {
+            setValue(newValue, forKey: UserDefaultsKeys.hasOnborded.rawValue)
+        }
+    }
+}
+extension UIViewController{
+    static var identifier: String{
+        return String(describing: self)
+    }
+    
+    static func instantiate() -> Self{
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        return storyboard.instantiateViewController(withIdentifier: identifier) as! Self
+    }
+}

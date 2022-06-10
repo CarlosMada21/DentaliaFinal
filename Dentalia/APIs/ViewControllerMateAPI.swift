@@ -16,7 +16,8 @@ class ViewControllerMateAPI: UIViewController {
         self.lbCurioso.text = buscarCurioso()
         
     }
-    @IBAction func cargarChiste(_ sender: Any) {
+    
+    @IBAction func buscarCurioso(_ sender: Any) {
         self.lbCurioso.text = buscarCurioso()
     }
     func buscarCurioso() -> String {
@@ -28,11 +29,10 @@ class ViewControllerMateAPI: UIViewController {
             if let data = try? Data(contentsOf: url){
 
                 let decodificador = JSONDecoder()
-                print("los")
+                
                 if let datoCuriosoMate = try? decodificador.decode(datoMate.self, from: data){
                     datoRegresado = datoCuriosoMate.curioso
-                    print(datoRegresado)
-                    print("Holaaa")
+                    
                 }
             }
         }

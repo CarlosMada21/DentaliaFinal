@@ -25,6 +25,10 @@
 		A962C2CD27F5CEC800F74707 /* DentaliaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2CC27F5CEC800F74707 /* DentaliaUITests.swift */; };
 		A962C2CF27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A962C2CE27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift */; };
 		A984F60027FEFDC9001EE510 /* Agenda.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A984F5FF27FEFDC8001EE510 /* Agenda.storyboard */; };
+		A9886EE22852DFC60086BD4B /* CollectionViewCellOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9886EDE2852DFC60086BD4B /* CollectionViewCellOnboarding.swift */; };
+		A9886EE32852DFC60086BD4B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9886EDF2852DFC60086BD4B /* Extension.swift */; };
+		A9886EE42852DFC60086BD4B /* ViewControllerOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9886EE02852DFC60086BD4B /* ViewControllerOnboarding.swift */; };
+		A9886EE52852DFC60086BD4B /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9886EE12852DFC60086BD4B /* OnboardingSlide.swift */; };
 		A99FA678280D356A00583635 /* CalendarioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA677280D356A00583635 /* CalendarioCell.swift */; };
 		A99FA67A280D379100583635 /* ViewControllerCalendario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA679280D379100583635 /* ViewControllerCalendario.swift */; };
 		A99FA67C280DE08E00583635 /* Calendario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA67B280DE08E00583635 /* Calendario.swift */; };
@@ -73,6 +77,10 @@
 		A962C2CC27F5CEC800F74707 /* DentaliaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentaliaUITests.swift; sourceTree = "<group>"; };
 		A962C2CE27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DentaliaUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A984F5FF27FEFDC8001EE510 /* Agenda.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Agenda.storyboard; sourceTree = "<group>"; };
+		A9886EDE2852DFC60086BD4B /* CollectionViewCellOnboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCellOnboarding.swift; sourceTree = "<group>"; };
+		A9886EDF2852DFC60086BD4B /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		A9886EE02852DFC60086BD4B /* ViewControllerOnboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerOnboarding.swift; sourceTree = "<group>"; };
+		A9886EE12852DFC60086BD4B /* OnboardingSlide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		A99FA677280D356A00583635 /* CalendarioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioCell.swift; sourceTree = "<group>"; };
 		A99FA679280D379100583635 /* ViewControllerCalendario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCalendario.swift; sourceTree = "<group>"; };
 		A99FA67B280DE08E00583635 /* Calendario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendario.swift; sourceTree = "<group>"; };
@@ -157,6 +165,7 @@
 		A962C2A727F5CEC500F74707 /* Dentalia */ = {
 			isa = PBXGroup;
 			children = (
+				A9886EDD2852DFC60086BD4B /* Onboarding */,
 				A95D7BD62852C8FF00153081 /* APIs */,
 				A962C2A827F5CEC500F74707 /* AppDelegate.swift */,
 				A962C2AA27F5CEC500F74707 /* SceneDelegate.swift */,
@@ -186,6 +195,18 @@
 				A962C2CE27F5CEC800F74707 /* DentaliaUITestsLaunchTests.swift */,
 			);
 			path = DentaliaUITests;
+			sourceTree = "<group>";
+		};
+		A9886EDD2852DFC60086BD4B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A9886EDE2852DFC60086BD4B /* CollectionViewCellOnboarding.swift */,
+				A9886EDF2852DFC60086BD4B /* Extension.swift */,
+				A9886EE02852DFC60086BD4B /* ViewControllerOnboarding.swift */,
+				A9886EE12852DFC60086BD4B /* OnboardingSlide.swift */,
+			);
+			name = Onboarding;
+			path = "../../Diariobetes 3/Diariobetes/Onboarding";
 			sourceTree = "<group>";
 		};
 		A9ACED8A283AEDD5000A8F61 /* Views */ = {
@@ -347,16 +368,20 @@
 				4D1987BD2837E50B00F9D408 /* ViewControllerBuscarPaciente.swift in Sources */,
 				A99FA67A280D379100583635 /* ViewControllerCalendario.swift in Sources */,
 				A962C2AD27F5CEC500F74707 /* ViewController.swift in Sources */,
+				A9886EE22852DFC60086BD4B /* CollectionViewCellOnboarding.swift in Sources */,
 				A962C2A927F5CEC500F74707 /* AppDelegate.swift in Sources */,
 				A93CA73F283B4C23001F6B90 /* EntidadPaciente+CoreDataProperties.swift in Sources */,
 				A962C2AB27F5CEC500F74707 /* SceneDelegate.swift in Sources */,
+				A9886EE52852DFC60086BD4B /* OnboardingSlide.swift in Sources */,
 				A95D7BD328526F6B00153081 /* ViewControllerChistesChuck.swift in Sources */,
 				A99FA67C280DE08E00583635 /* Calendario.swift in Sources */,
 				A95D7BD82852CFA000153081 /* ViewControllerMateAPI.swift in Sources */,
 				A93CA73E283B4C23001F6B90 /* EntidadPaciente+CoreDataClass.swift in Sources */,
 				A962C2B327F5CEC500F74707 /* Dentalia.xcdatamodeld in Sources */,
 				A99FA678280D356A00583635 /* CalendarioCell.swift in Sources */,
+				A9886EE32852DFC60086BD4B /* Extension.swift in Sources */,
 				4D1987BF2837F02500F9D408 /* ViewControllerActualizarPaciente.swift in Sources */,
+				A9886EE42852DFC60086BD4B /* ViewControllerOnboarding.swift in Sources */,
 				A91FADAA281BFC9200CB18DD /* ViewControllerAltaPaciente.swift in Sources */,
 				A9AEA2B1281AC98200145B19 /* TableViewControllerPacientes.swift in Sources */,
 				A9AEA2AF281AB38B00145B19 /* ViewControllerPacientes.swift in Sources */,
