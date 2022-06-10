@@ -286,7 +286,7 @@
         <scene sceneID="NvS-Bl-aJb">
             <objects>
                 <viewController storyboardIdentifier="VCAgregarPaciente" id="RPu-Qd-r93" customClass="TableViewControllerPacientes" customModule="Dentalia" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="2" rowHeight="50" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="izr-d8-zle">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" sectionIndexMinimumDisplayRowCount="2" rowHeight="56" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="izr-d8-zle">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -427,7 +427,7 @@
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vrE-He-xgl"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <color key="backgroundColor" red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pGW-AF-f1Y" firstAttribute="width" secondItem="G9k-tQ-xKw" secondAttribute="width" multiplier="0.0990338" id="0b6-kE-JX6"/>
                             <constraint firstItem="pGW-AF-f1Y" firstAttribute="top" secondItem="vrE-He-xgl" secondAttribute="top" constant="298" id="1M0-SF-mO0"/>

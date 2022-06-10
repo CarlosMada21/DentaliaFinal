@@ -9,7 +9,6 @@ import UIKit
 
 class CeldaRecordatorio: UITableViewCell {
     
-    
     @IBOutlet weak var lbRecordatorio: UILabel!
     
 }
@@ -44,13 +43,15 @@ class TableViewControllerRecordatorio: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let celdaRecordatorio = tableView.dequeueReusableCell(withIdentifier: "TableViewCellRecordatorio") as! CeldaRecordatorio
         
-        tableView.backgroundColor = UIColor.green
-        celdaRecordatorio.backgroundColor = UIColor.green
+        tableView.backgroundColor = UIColor(red: 52/255, green: 199/255, blue: 89/255, alpha: 1)
+        
+        celdaRecordatorio.backgroundColor = UIColor(red: 52/255, green: 199/255, blue: 89/255, alpha: 1)
+        
         
         celdaRecordatorio.lbRecordatorio.text = aRecordatorios[indexPath.item].sNota
         
@@ -67,7 +68,7 @@ class TableViewControllerRecordatorio: UITableViewController {
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         let deleteAction = UIContextualAction(style: .destructive, title: "Borrar", handler: {(_, _, completionHandle) in
 
-            self.contextoRecordatorio.delete(aPacientes[indexPath.row])
+            self.contextoRecordatorio.delete(self.aRecordatorios[indexPath.row])
             do{
                 try self.contextoRecordatorio.save()
                 self.buscarRecordatorios()
