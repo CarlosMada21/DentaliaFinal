@@ -33,6 +33,7 @@
 		A9886EEA28530B810086BD4B /* TableViewControllerRecordatorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9886EE928530B810086BD4B /* TableViewControllerRecordatorio.swift */; };
 		A9886EED2853183C0086BD4B /* EntidadRecordatorio+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9886EEB2853183C0086BD4B /* EntidadRecordatorio+CoreDataClass.swift */; };
 		A9886EEE2853183C0086BD4B /* EntidadRecordatorio+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9886EEC2853183C0086BD4B /* EntidadRecordatorio+CoreDataProperties.swift */; };
+		A9886EF2285320CC0086BD4B /* TableViewControllerDetallesRecordatorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9886EF1285320CC0086BD4B /* TableViewControllerDetallesRecordatorio.swift */; };
 		A99FA678280D356A00583635 /* CalendarioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA677280D356A00583635 /* CalendarioCell.swift */; };
 		A99FA67A280D379100583635 /* ViewControllerCalendario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA679280D379100583635 /* ViewControllerCalendario.swift */; };
 		A99FA67C280DE08E00583635 /* Calendario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA67B280DE08E00583635 /* Calendario.swift */; };
@@ -89,6 +90,7 @@
 		A9886EE928530B810086BD4B /* TableViewControllerRecordatorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerRecordatorio.swift; sourceTree = "<group>"; };
 		A9886EEB2853183C0086BD4B /* EntidadRecordatorio+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntidadRecordatorio+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A9886EEC2853183C0086BD4B /* EntidadRecordatorio+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntidadRecordatorio+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A9886EF1285320CC0086BD4B /* TableViewControllerDetallesRecordatorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerDetallesRecordatorio.swift; sourceTree = "<group>"; };
 		A99FA677280D356A00583635 /* CalendarioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioCell.swift; sourceTree = "<group>"; };
 		A99FA679280D379100583635 /* ViewControllerCalendario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCalendario.swift; sourceTree = "<group>"; };
 		A99FA67B280DE08E00583635 /* Calendario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendario.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 			children = (
 				A9886EE728530B640086BD4B /* ViewControllerRecordatorio.swift */,
 				A9886EE928530B810086BD4B /* TableViewControllerRecordatorio.swift */,
+				A9886EF1285320CC0086BD4B /* TableViewControllerDetallesRecordatorio.swift */,
 			);
 			path = Recordatorio;
 			sourceTree = "<group>";
@@ -389,6 +392,7 @@
 				A99FA67A280D379100583635 /* ViewControllerCalendario.swift in Sources */,
 				A962C2AD27F5CEC500F74707 /* ViewController.swift in Sources */,
 				A9886EE22852DFC60086BD4B /* CollectionViewCellOnboarding.swift in Sources */,
+				A9886EF2285320CC0086BD4B /* TableViewControllerDetallesRecordatorio.swift in Sources */,
 				A9886EED2853183C0086BD4B /* EntidadRecordatorio+CoreDataClass.swift in Sources */,
 				A962C2A927F5CEC500F74707 /* AppDelegate.swift in Sources */,
 				A93CA73F283B4C23001F6B90 /* EntidadPaciente+CoreDataProperties.swift in Sources */,

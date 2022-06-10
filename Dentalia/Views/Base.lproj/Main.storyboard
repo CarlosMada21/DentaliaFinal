@@ -534,6 +534,63 @@
             </objects>
             <point key="canvasLocation" x="1342.0289855072465" y="-1230.1339285714284"/>
         </scene>
+        <!--Table View Controller Detalles Recordatorio-->
+        <scene sceneID="F16-VX-RXA">
+            <objects>
+                <tableViewController storyboardIdentifier="TVDetallesRecordatorios" id="Lah-V8-c6f" customClass="TableViewControllerDetallesRecordatorio" customModule="Dentalia" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="VhD-Mx-mvM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCellDetallesRecordatorio" rowHeight="110" id="wds-7I-Z09" customClass="CeldaDetallesRecordatorio" customModule="Dentalia" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="110"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wds-7I-Z09" id="BwM-Gn-aM4">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EUK-6b-QTB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48V-io-0Yp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bj6-WE-iAK">
+                                                    <rect key="frame" x="0.0" y="55" width="414" height="55"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="EUK-6b-QTB" firstAttribute="height" secondItem="BwM-Gn-aM4" secondAttribute="height" id="0OA-lp-Zin"/>
+                                        <constraint firstItem="EUK-6b-QTB" firstAttribute="leading" secondItem="BwM-Gn-aM4" secondAttribute="leading" id="X2G-WQ-a03"/>
+                                        <constraint firstItem="EUK-6b-QTB" firstAttribute="width" secondItem="BwM-Gn-aM4" secondAttribute="width" id="knU-co-iyc"/>
+                                        <constraint firstItem="EUK-6b-QTB" firstAttribute="top" secondItem="BwM-Gn-aM4" secondAttribute="top" id="tTl-FL-s28"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lbFecha" destination="bj6-WE-iAK" id="CsF-2d-xJe"/>
+                                    <outlet property="lbRecordatorio" destination="48V-io-0Yp" id="Acs-f6-tka"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Lah-V8-c6f" id="9Ql-Ld-f2j"/>
+                            <outlet property="delegate" destination="Lah-V8-c6f" id="xPg-xg-IGC"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CPd-HY-7in" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105.7971014492755" y="-1235.4910714285713"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="2TN-yN-QAm">
             <objects>
