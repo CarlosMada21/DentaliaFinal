@@ -81,8 +81,8 @@ class TableViewControllerPacientes: UITableViewController {
             contexto.delete(aPacientes[indexPath.row])
             do{
                 try contexto.save()
-                let VCAltaPaciente = self.navigationController?.viewControllers[2]
-                self.navigationController?.popToViewController(VCAltaPaciente!, animated: true)
+                self.buscarPacientes()
+                self.tableView.reloadData()
             } catch {
                 self.mostrarMensajeAlerta("Error", "No se borró el paciente")
             }
@@ -90,8 +90,7 @@ class TableViewControllerPacientes: UITableViewController {
         })
         deleteAction.image = UIImage(systemName: "trash")
         deleteAction.backgroundColor = .systemRed
-        buscarPacientes()
-        self.tableView.reloadData()
+        
         return UISwipeActionsConfiguration(actions: [deleteAction])
     }
     /*

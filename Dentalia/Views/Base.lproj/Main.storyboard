@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L0g-Om-AC7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="L0g-Om-AC7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -220,6 +220,67 @@
             </objects>
             <point key="canvasLocation" x="-607" y="750"/>
         </scene>
+        <!--View Controller Chistes Chuck-->
+        <scene sceneID="ruJ-Ao-l4V">
+            <objects>
+                <viewController storyboardIdentifier="VCChistesAPI" id="Gxk-qx-Whe" customClass="ViewControllerChistesChuck" customModule="Dentalia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LK8-Hz-a1h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3b-v7-eeB">
+                                <rect key="frame" x="127" y="69" width="160" height="27"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Ríete con Chuck">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="24" name="Times-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1b-8a-F9y">
+                                <rect key="frame" x="45" y="160" width="318" height="457"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lc-XE-13Z">
+                                <rect key="frame" x="173.5" y="779" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="arrow.clockwise" catalog="system"/>
+                                <connections>
+                                    <action selector="cargarChiste:" destination="Gxk-qx-Whe" eventType="touchUpInside" id="1Wh-tf-QQz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4d2-Jd-UtB"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="6lc-XE-13Z" firstAttribute="height" secondItem="LK8-Hz-a1h" secondAttribute="height" multiplier="0.0345982" id="0hi-fM-yeh"/>
+                            <constraint firstItem="z1b-8a-F9y" firstAttribute="width" secondItem="LK8-Hz-a1h" secondAttribute="width" multiplier="0.768116" id="Iww-8x-1AY"/>
+                            <constraint firstItem="6lc-XE-13Z" firstAttribute="centerX" secondItem="4d2-Jd-UtB" secondAttribute="centerX" id="LsT-N8-EfQ"/>
+                            <constraint firstItem="6lc-XE-13Z" firstAttribute="width" secondItem="LK8-Hz-a1h" secondAttribute="width" multiplier="0.161836" id="QPu-SH-bNP"/>
+                            <constraint firstItem="z1b-8a-F9y" firstAttribute="top" secondItem="4d2-Jd-UtB" secondAttribute="top" constant="116" id="SIN-EM-uYd"/>
+                            <constraint firstItem="s3b-v7-eeB" firstAttribute="centerX" secondItem="4d2-Jd-UtB" secondAttribute="centerX" id="TWh-Ms-GFW"/>
+                            <constraint firstItem="z1b-8a-F9y" firstAttribute="centerX" secondItem="4d2-Jd-UtB" secondAttribute="centerX" id="Vy8-W3-KLD"/>
+                            <constraint firstItem="s3b-v7-eeB" firstAttribute="height" secondItem="LK8-Hz-a1h" secondAttribute="height" multiplier="0.0301339" id="X0D-kJ-dWP"/>
+                            <constraint firstItem="z1b-8a-F9y" firstAttribute="height" secondItem="LK8-Hz-a1h" secondAttribute="height" multiplier="0.510045" id="Zaw-cq-tJB"/>
+                            <constraint firstItem="s3b-v7-eeB" firstAttribute="width" secondItem="LK8-Hz-a1h" secondAttribute="width" multiplier="0.386473" id="tCt-m7-dFv"/>
+                            <constraint firstItem="4d2-Jd-UtB" firstAttribute="bottom" secondItem="6lc-XE-13Z" secondAttribute="bottom" constant="52" id="taJ-q2-0ja"/>
+                            <constraint firstItem="s3b-v7-eeB" firstAttribute="top" secondItem="4d2-Jd-UtB" secondAttribute="top" constant="25" id="ycg-yX-qPq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lbChiste" destination="z1b-8a-F9y" id="Ujo-7f-hqQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RiY-0X-rTS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="345"/>
+        </scene>
         <!--Mostrar-->
         <scene sceneID="NvS-Bl-aJb">
             <objects>
@@ -291,7 +352,7 @@
         <!--Actualizar-->
         <scene sceneID="UrA-Jx-kcQ">
             <objects>
-                <viewController id="cRh-4x-Ksy" customClass="ViewControllerBuscarPaciente" customModule="Dentalia" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cRh-4x-Ksy" customClass="ViewControllerChistesChuck" customModule="Dentalia" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="knO-Qv-jQ9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -338,9 +399,6 @@
                                 <rect key="frame" x="172.5" y="564" width="69" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Buscar"/>
-                                <connections>
-                                    <action selector="buscarPaciente:" destination="cRh-4x-Ksy" eventType="touchUpInside" id="sqd-kr-rdq"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="S9U-KO-j0l"/>
@@ -357,10 +415,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Actualizar" image="pencil" catalog="system" id="fxV-eH-B9b"/>
-                    <connections>
-                        <outlet property="tfID" destination="2t2-4q-RPy" id="5NH-TY-SUT"/>
-                        <outlet property="tfNombre" destination="7up-QN-uR3" id="OPQ-hk-232"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gVU-lE-dBs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -378,6 +432,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="SNM-ih-Lru" kind="relationship" relationship="viewControllers" id="Css-0r-650"/>
+                        <segue destination="cRh-4x-Ksy" kind="relationship" relationship="viewControllers" id="wwY-4Y-yRT"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mCh-BA-F5t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -624,6 +679,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
         <image name="arrowshape.turn.up.left.circle.fill" catalog="system" width="128" height="121"/>
         <image name="arrowshape.turn.up.right.circle.fill" catalog="system" width="128" height="121"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
@@ -631,6 +687,9 @@
         <image name="person.fill.badge.plus" catalog="system" width="128" height="124"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

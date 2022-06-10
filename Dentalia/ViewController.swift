@@ -11,7 +11,7 @@ var aPacientes:[EntidadPaciente] = []
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var TableViewPrincipal: UITableView!
-    let opcionesMenuPrincipal: [String] = ["Agenda", "Pacientes", "Tratamiento"]//, "Historia Clínica", "Presupuesto", "Recordatorios"]
+    let opcionesMenuPrincipal: [String] = ["Agenda", "Pacientes", "Chistes Chucknorriescos"]//, "Historia Clínica", "Presupuesto", "Recordatorios"]
     let imagenesMenuPrincipal: [String] = ["calendar", "person.circle", "square.and.pencil"]//, "waveform.path.ecg.rectangle", "dollarsign.circle.fill", "note"]
     
     override func viewDidLoad() {
@@ -51,8 +51,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             case 1: let TBCPacientes = storyboard?.instantiateViewController(withIdentifier: "TBCPacientes")//UITableViewController
                 navigationController?.pushViewController(TBCPacientes!, animated: true)
                 break
-            case 2: let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerCalendario
-                navigationController?.pushViewController(VCPacientes!, animated: true)
+            case 2: let VCChistes = storyboard?.instantiateViewController (identifier: "VCChistesAPI") as? ViewControllerChistesChuck
+                navigationController?.pushViewController(VCChistes!, animated: true)
                 break
             case 3: let VCPacientes = storyboard?.instantiateViewController (identifier: "VCPacientes") as? ViewControllerCalendario
                 navigationController?.pushViewController(VCPacientes!, animated: true)
