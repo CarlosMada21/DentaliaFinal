@@ -9,7 +9,12 @@
         <attribute name="sTelefono" optional="YES" attributeType="String"/>
         <attribute name="sTratamiento" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="EntidadRecordatorio" representedClassName="EntidadRecordatorio" syncable="YES" codeGenerationType="class">
+        <attribute name="sFecha" optional="YES" attributeType="String"/>
+        <attribute name="sNota" optional="YES" attributeType="String"/>
+    </entity>
     <elements>
         <element name="EntidadPaciente" positionX="-63" positionY="-18" width="128" height="134"/>
+        <element name="EntidadRecordatorio" positionX="-63" positionY="36" width="128" height="59"/>
     </elements>
 </model>

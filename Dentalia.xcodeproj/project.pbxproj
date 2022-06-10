@@ -29,6 +29,8 @@
 		A9886EE32852DFC60086BD4B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9886EDF2852DFC60086BD4B /* Extension.swift */; };
 		A9886EE42852DFC60086BD4B /* ViewControllerOnboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9886EE02852DFC60086BD4B /* ViewControllerOnboarding.swift */; };
 		A9886EE52852DFC60086BD4B /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9886EE12852DFC60086BD4B /* OnboardingSlide.swift */; };
+		A9886EE828530B640086BD4B /* ViewControllerRecordatorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9886EE728530B640086BD4B /* ViewControllerRecordatorio.swift */; };
+		A9886EEA28530B810086BD4B /* TableViewControllerRecordatorio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9886EE928530B810086BD4B /* TableViewControllerRecordatorio.swift */; };
 		A99FA678280D356A00583635 /* CalendarioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA677280D356A00583635 /* CalendarioCell.swift */; };
 		A99FA67A280D379100583635 /* ViewControllerCalendario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA679280D379100583635 /* ViewControllerCalendario.swift */; };
 		A99FA67C280DE08E00583635 /* Calendario.swift in Sources */ = {isa = PBXBuildFile; fileRef = A99FA67B280DE08E00583635 /* Calendario.swift */; };
@@ -81,6 +83,8 @@
 		A9886EDF2852DFC60086BD4B /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		A9886EE02852DFC60086BD4B /* ViewControllerOnboarding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerOnboarding.swift; sourceTree = "<group>"; };
 		A9886EE12852DFC60086BD4B /* OnboardingSlide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		A9886EE728530B640086BD4B /* ViewControllerRecordatorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerRecordatorio.swift; sourceTree = "<group>"; };
+		A9886EE928530B810086BD4B /* TableViewControllerRecordatorio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerRecordatorio.swift; sourceTree = "<group>"; };
 		A99FA677280D356A00583635 /* CalendarioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioCell.swift; sourceTree = "<group>"; };
 		A99FA679280D379100583635 /* ViewControllerCalendario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCalendario.swift; sourceTree = "<group>"; };
 		A99FA67B280DE08E00583635 /* Calendario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendario.swift; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 		A962C2A727F5CEC500F74707 /* Dentalia */ = {
 			isa = PBXGroup;
 			children = (
+				A9886EE628530B480086BD4B /* Recordatorio */,
 				A9886EDD2852DFC60086BD4B /* Onboarding */,
 				A95D7BD62852C8FF00153081 /* APIs */,
 				A962C2A827F5CEC500F74707 /* AppDelegate.swift */,
@@ -207,6 +212,15 @@
 			);
 			name = Onboarding;
 			path = "../../Diariobetes 3/Diariobetes/Onboarding";
+			sourceTree = "<group>";
+		};
+		A9886EE628530B480086BD4B /* Recordatorio */ = {
+			isa = PBXGroup;
+			children = (
+				A9886EE728530B640086BD4B /* ViewControllerRecordatorio.swift */,
+				A9886EE928530B810086BD4B /* TableViewControllerRecordatorio.swift */,
+			);
+			path = Recordatorio;
 			sourceTree = "<group>";
 		};
 		A9ACED8A283AEDD5000A8F61 /* Views */ = {
@@ -373,6 +387,7 @@
 				A93CA73F283B4C23001F6B90 /* EntidadPaciente+CoreDataProperties.swift in Sources */,
 				A962C2AB27F5CEC500F74707 /* SceneDelegate.swift in Sources */,
 				A9886EE52852DFC60086BD4B /* OnboardingSlide.swift in Sources */,
+				A9886EEA28530B810086BD4B /* TableViewControllerRecordatorio.swift in Sources */,
 				A95D7BD328526F6B00153081 /* ViewControllerChistesChuck.swift in Sources */,
 				A99FA67C280DE08E00583635 /* Calendario.swift in Sources */,
 				A95D7BD82852CFA000153081 /* ViewControllerMateAPI.swift in Sources */,
@@ -385,6 +400,7 @@
 				A91FADAA281BFC9200CB18DD /* ViewControllerAltaPaciente.swift in Sources */,
 				A9AEA2B1281AC98200145B19 /* TableViewControllerPacientes.swift in Sources */,
 				A9AEA2AF281AB38B00145B19 /* ViewControllerPacientes.swift in Sources */,
+				A9886EE828530B640086BD4B /* ViewControllerRecordatorio.swift in Sources */,
 				A9E1C91E2818BC2C00EFB7A6 /* Pacientes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
