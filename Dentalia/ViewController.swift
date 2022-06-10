@@ -11,7 +11,7 @@ var aPacientes:[EntidadPaciente] = []
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var TableViewPrincipal: UITableView!
-    let opcionesMenuPrincipal: [String] = ["Calendario", "Pacientes", "API's"]//, "Historia Clínica", "Presupuesto", "Recordatorios"]
+    let opcionesMenuPrincipal: [String] = ["Calendario", "Pacientes y Recordatorios", "API's"]//, "Historia Clínica", "Presupuesto", "Recordatorios"]
     let imagenesMenuPrincipal: [String] = ["calendar", "person.circle", "square.and.pencil"]//, "waveform.path.ecg.rectangle", "dollarsign.circle.fill", "note"]
     
     override func viewDidLoad() {
